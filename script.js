@@ -7,7 +7,7 @@ const translations = {
       'nav.create': 'Excursions',
       'nav.reviews': 'Avis',
       'nav.story': 'Notre histoire',
-      'footer.rights': 'Québec Mexique. Tous droits réservés.',
+      'footer.rights': '© 2025 Québec Mexique (A beyondthereefmexico brand). Tous droits réservés.',
       'floatingContact.aria': 'Options de contact rapide',
       'floatingContact.whatsappAria': 'Discuter sur WhatsApp',
       'floatingContact.emailAria': 'Envoyer un courriel à Québec Mexique',
@@ -49,7 +49,7 @@ const translations = {
       'home.hero.dots': 'Diapositives vedettes',
       'home.difference.heading': 'Vivez la différence',
       'home.difference.captured.title': 'Immortalisé',
-      'home.difference.captured.copy': 'Photos offertes à chaque excursion',
+      'home.difference.captured.copy': 'Photos offertes à chaque excursion Privée (Promo non valide pour tour avec transport partagé)',
       'home.difference.pace.title': 'À votre rythme',
       'home.difference.pace.copy': 'Choisissez votre heure de départ, évitez les prises en charge, créez votre horaire',
       'home.difference.journey.title': 'Votre aventure',
@@ -112,7 +112,7 @@ const translations = {
       'home.builder.pointThree':
         'Vous recevrez un devis personnalisé ou l’option de discuter en vidéo avec notre équipe.',
       'home.builder.emailFallback':
-        'Vous préférez le courriel? Écrivez-nous à <a href="mailto:info@beyondthereefmexico.com">info@beyondthereefmexico.com</a>.',
+        'Vous préférez le courriel? Écrivez-nous à <a href="mailto:info@quebecmexique.com">info@quebecmexique.com</a>.',
       'home.builder.emailSubject': 'Idée de journée sur mesure de {{name}}',
       'home.builder.status.missing':
         'Veuillez ajouter votre nom, votre courriel et votre idée afin que nous puissions préparer votre devis.',
@@ -183,7 +183,7 @@ const translations = {
       'tours.contact.point2': 'Service 100 % privé avec vans neuves, capitaines pros et guides certifiés.',
       'tours.contact.point3': 'Normes de nourriture sécuritaire avec menus adaptés aux végans, sans gluten et allergies.',
       'tours.contact.channels':
-        'Vous préférez un contact direct? Écrivez à <a href="mailto:info@beyondthereefmexico.com">info@beyondthereefmexico.com</a> ou WhatsApp <a href="https://wa.me/529841670697" target="_blank" rel="noopener noreferrer">+52 984 167 0697</a>.',
+        'Vous préférez un contact direct? Écrivez à <a href="mailto:info@quebecmexique.com">info@quebecmexique.com</a> ou WhatsApp <a href="https://wa.me/529841670697" target="_blank" rel="noopener noreferrer">+52 984 167 0697</a>.',
       'tours.contact.formAria': 'Partagez l’excursion souhaitée',
       'tours.contact.nameLabel': 'Nom',
       'tours.contact.namePlaceholder': 'Votre nom',
@@ -243,7 +243,7 @@ const translations = {
         '“On a commencé au marché local pour les épices, pris un cours de cuisine et terminé par une dégustation de mezcal avec un maître. C’était authentique, jamais touristique.” - <strong>Eduardo</strong>',
       'reviews.share.heading': 'Partagez votre expérience',
       'reviews.share.copy':
-        'Écrivez-nous à <a href="mailto:info@beyondthereefmexico.com">info@beyondthereefmexico.com</a> avec vos meilleurs moments ou identifiez-nous avec <strong>#QuebecMexique</strong> pour avoir la chance d’apparaître.'
+        'Écrivez-nous à <a href="mailto:info@quebecmexique.com">info@quebecmexique.com</a> avec vos meilleurs moments ou identifiez-nous avec <strong>#QuebecMexique</strong> pour avoir la chance d’apparaître.'
     },
     story: {
       'page.title': 'Notre histoire | Québec Mexique',
