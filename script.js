@@ -1,680 +1,354 @@
 const translations = {
-  en: {
+  fr: {
     global: {
-      'nav.primary': 'Primary',
-      'nav.toggle': 'Toggle navigation',
-      'nav.home': 'Home',
+      'nav.primary': 'Navigation principale',
+      'nav.toggle': 'Basculer la navigation',
+      'nav.home': 'Accueil',
       'nav.create': 'Excursions',
-      'nav.reviews': 'Reviews',
-      'nav.story': 'Our Story',
-      'footer.rights': 'Beyond the Reef Mexico. All rights reserved.',
-      'floatingContact.aria': 'Quick contact options',
-      'floatingContact.whatsappAria': 'Chat on WhatsApp',
-      'floatingContact.emailAria': 'Email Beyond the Reef Mexico',
-      'floatingContact.instagramAria': 'Open Instagram',
+      'nav.reviews': 'Avis',
+      'nav.story': 'Notre histoire',
+      'footer.rights': 'Québec Mexique. Tous droits réservés.',
+      'floatingContact.aria': 'Options de contact rapide',
+      'floatingContact.whatsappAria': 'Discuter sur WhatsApp',
+      'floatingContact.emailAria': 'Envoyer un courriel à Québec Mexique',
+      'floatingContact.instagramAria': 'Ouvrir Instagram',
       'floatingContact.whatsappLabel': 'WhatsApp',
-      'floatingContact.emailLabel': 'Email',
+      'floatingContact.emailLabel': 'Courriel',
       'floatingContact.instagramLabel': 'Instagram',
-      'themeToggle.dark': 'Dark mode',
-      'themeToggle.light': 'Light mode',
-      'heroSlider.goToSlide': 'Go to slide {{index}}',
-      'tourBuilder.remove': 'Remove',
-      'inquiry.emailSubject': 'Custom day idea from {{name}}',
-      'inquiry.emailBody.nameLabel': 'Name',
-      'inquiry.emailBody.emailLabel': 'Email',
-      'inquiry.emailBody.phoneLabel': 'Phone',
-      'inquiry.emailBody.ideaLabel': 'Trip idea',
-      'inquiry.status.missing': 'Please add your name, email, and idea so we can craft your quote.',
-      'inquiry.status.sending': 'Sending your request to our concierge team now.',
-      'inquiry.status.sent': 'Thanks! Your request is in. We will follow up shortly.',
-      'inquiry.status.error': 'Something went wrong sending your request. Please try again.',
-      'inquiry.status.unavailable': 'Unable to send your request right now. Please try again shortly.',
-      'inquiry.status.missingService': 'Please connect this form to an email service to receive requests.',
-      'tour.card.viewDetails': 'View details',
-      'tour.card.bookNow': 'Book now',
-      'tour.card.privateBadge': 'Private tour',
-      'tour.card.halfDay': 'Half day',
-      'tour.card.fullDay': 'Full day',
-      'tour.card.viewAria': 'View {{name}}'
+      'themeToggle.dark': 'Mode sombre',
+      'themeToggle.light': 'Mode clair',
+      'heroSlider.goToSlide': 'Aller à la diapositive {{index}}',
+      'tourBuilder.remove': 'Retirer',
+      'inquiry.emailSubject': 'Idée de journée sur mesure de {{name}}',
+      'inquiry.emailBody.nameLabel': 'Nom',
+      'inquiry.emailBody.emailLabel': 'Courriel',
+      'inquiry.emailBody.phoneLabel': 'Téléphone',
+      'inquiry.emailBody.ideaLabel': 'Idée de voyage',
+      'inquiry.status.missing':
+        'Veuillez ajouter votre nom, votre courriel et votre idée afin que nous puissions préparer votre devis.',
+      'inquiry.status.sending': 'Nous envoyons votre demande à notre équipe concierge.',
+      'inquiry.status.sent': 'Merci! Votre demande est reçue. Nous vous répondons sous peu.',
+      'inquiry.status.error': 'Une erreur est survenue lors de l’envoi. Veuillez réessayer.',
+      'inquiry.status.unavailable': 'Impossible d’envoyer votre demande pour le moment. Réessayez dans quelques instants.',
+      'inquiry.status.missingService':
+        'Veuillez connecter ce formulaire à un service de courriel pour recevoir les demandes.',
+      'tour.card.viewDetails': 'Voir les détails',
+      'tour.card.bookNow': 'Réserver',
+      'tour.card.privateBadge': 'Excursion privée',
+      'tour.card.halfDay': 'Demi-journée',
+      'tour.card.fullDay': 'Journée complète',
+      'tour.card.viewAria': 'Voir {{name}}'
     },
     home: {
-      'page.title': 'Beyond the Reef Mexico',
-      'home.hero.aria': 'Featured Experiences',
-      'home.hero.heading': 'Pure adrenaline. Untamed nature. Your story in the making.',
+      'page.title': 'Québec Mexique',
+      'home.hero.aria': 'Expériences à la une',
+      'home.hero.heading': 'Adrénaline pure. Nature indomptée. Votre histoire en train de s’écrire.',
       'home.hero.description':
-        'Not just a day out - this is freedom unleashed. Swim with turtles, dive into cenotes, race across lagoons, and explore ancient Mayan ruins. No crowds. No limits. Just raw adventure carved into the heart of the Riviera Maya. Your rules. Your pace. Your unforgettable. This isn’t tourism. This is Beyond the Reef.',
-      'home.hero.cta': 'See all our private excursions',
-      'home.hero.previous': 'Previous slide',
-      'home.hero.next': 'Next slide',
-      'home.hero.dots': 'Featured slides',
-      'home.difference.heading': 'Experience the Difference',
-      'home.difference.captured.title': 'Captured',
-      'home.difference.captured.copy': 'Complimentary Photography on Every Tour',
-      'home.difference.pace.title': 'Set the Pace',
-      'home.difference.pace.copy': 'Choose your start time, skip pickups, set your own schedule',
-      'home.difference.journey.title': 'Your Journey',
-      'home.difference.journey.copy': 'Snorkel, explore, taste, relax - the choice is yours',
-      'home.difference.surprises.title': 'No Surprises',
-      'home.difference.surprises.copy': 'No hidden costs, No extra charges, Just adventure',
+        'Pas juste une sortie : c’est la liberté totale. Nagez avec les tortues, plongez dans les cenotes, filez à travers les lagunes et explorez d’anciennes ruines mayas. Pas de foule. Pas de limites. Juste l’aventure brute au cœur de la Riviera Maya. Vos règles. Votre rythme. Votre souvenir inoubliable. Ce n’est pas du tourisme. C’est Québec Mexique.',
+      'home.hero.cta': 'Voir toutes nos excursions privées',
+      'home.hero.previous': 'Diapositive précédente',
+      'home.hero.next': 'Diapositive suivante',
+      'home.hero.dots': 'Diapositives vedettes',
+      'home.difference.heading': 'Vivez la différence',
+      'home.difference.captured.title': 'Immortalisé',
+      'home.difference.captured.copy': 'Photos offertes à chaque excursion',
+      'home.difference.pace.title': 'À votre rythme',
+      'home.difference.pace.copy': 'Choisissez votre heure de départ, évitez les prises en charge, créez votre horaire',
+      'home.difference.journey.title': 'Votre aventure',
+      'home.difference.journey.copy': 'Snorkel, exploration, saveurs, détente — à vous de choisir',
+      'home.difference.surprises.title': 'Sans surprises',
+      'home.difference.surprises.copy': 'Aucun coût caché, aucun extra, juste l’aventure',
       'home.difference.excellence.title': 'Excellence',
-      'home.difference.excellence.copy': 'We don’t claim it - our guests do. Five stars, every time.',
-      'home.favorites.heading': 'Adventures Loved by Travelers',
-      'home.favorites.copy': 'Swipe through limited-time offers on the tours our guests love the most.',
-      'home.favorites.previous': 'Previous tours',
-      'home.favorites.next': 'Next tours',
-      'home.favorites.card1.tag': 'Top pick',
-      'home.favorites.card1.title': 'Swimming with Whale Sharks',
-      'home.favorites.card1.badge': '-30%',
-      'home.favorites.card1.deal': 'Up to 30% discount',
+      'home.difference.excellence.copy': 'Ce n’est pas nous qui le disons : nos invités. Cinq étoiles, toujours.',
+      'home.favorites.heading': 'Aventures adorées par nos voyageurs',
+      'home.favorites.copy':
+        'Faites défiler les offres à durée limitée sur les excursions que nos invités adorent le plus.',
+      'home.favorites.previous': 'Excursions précédentes',
+      'home.favorites.next': 'Excursions suivantes',
+      'home.favorites.card1.tag': 'Coup de cœur',
+      'home.favorites.card1.title': 'Nage avec les requins-baleines',
+      'home.favorites.card1.badge': '-30 %',
+      'home.favorites.card1.deal': 'Jusqu’à 30 % de rabais',
       'home.favorites.card1.copy':
-        'Charter a private boat with marine biologist guides and slip into the water beside gentle giants at sunrise.',
-      'home.favorites.card1.cta': 'More information',
-      'home.favorites.card2.tag': 'Guest favorite',
-      'home.favorites.card2.title': 'The Taco Tour',
-      'home.favorites.card2.badge': '-25%',
-      'home.favorites.card2.deal': 'Up to 25% discount',
+        'Affrétez un bateau privé avec des guides biologistes marins et glissez dans l’eau avec ces géants paisibles au lever du soleil.',
+      'home.favorites.card1.cta': 'Plus d’infos',
+      'home.favorites.card2.tag': 'Favori des invités',
+      'home.favorites.card2.title': 'Le Taco Tour',
+      'home.favorites.card2.badge': '-25 %',
+      'home.favorites.card2.deal': 'Jusqu’à 25 % de rabais',
       'home.favorites.card2.copy':
-        'Taste your way through hidden taquerías with a local host curating mezcal pairings and street-food legends.',
-      'home.favorites.card2.cta': 'More information',
-      'home.favorites.card3.tag': 'Limited spots',
-      'home.favorites.card3.title': 'El Cielo Cozumel Snorkeling',
-      'home.favorites.card3.badge': '-22%',
-      'home.favorites.card3.deal': 'Up to 22% discount',
+        'Goûtez aux taquerías cachées avec un hôte local qui marie les mezcals et les légendes de rue.',
+      'home.favorites.card2.cta': 'Plus d’infos',
+      'home.favorites.card3.tag': 'Places limitées',
+      'home.favorites.card3.title': 'Snorkel à El Cielo Cozumel',
+      'home.favorites.card3.badge': '-22 %',
+      'home.favorites.card3.deal': 'Jusqu’à 22 % de rabais',
       'home.favorites.card3.copy':
-        'Float above starfish gardens and neon reefs in Cozumel with a captain who times the sandbar at its clearest.',
-      'home.favorites.card3.cta': 'More information',
-      'home.favorites.card4.tag': 'Photo ready',
-      'home.favorites.card4.title': 'Tulum Insta Experience',
-      'home.favorites.card4.badge': '-18%',
-      'home.favorites.card4.deal': 'Up to 18% discount',
+        'Flottez au-dessus des jardins d’étoiles de mer et des récifs éclatants à Cozumel avec un capitaine qui choisit le banc de sable à son meilleur.',
+      'home.favorites.card3.cta': 'Plus d’infos',
+      'home.favorites.card4.tag': 'Prêt pour les photos',
+      'home.favorites.card4.title': 'Expérience Insta à Tulum',
+      'home.favorites.card4.badge': '-18 %',
+      'home.favorites.card4.deal': 'Jusqu’à 18 % de rabais',
       'home.favorites.card4.copy':
-        'Capture cinematic shots across Tulum’s ruins and cenotes with a creative director setting the scene for every moment.',
-      'home.favorites.card4.cta': 'More information',
-      'home.builder.eyebrow': 'Plan with our concierge team',
-      'home.builder.heading': 'We build your perfect day',
+        'Capturez des images cinématographiques dans les ruines et les cenotes de Tulum avec une direction artistique pour chaque moment.',
+      'home.favorites.card4.cta': 'Plus d’infos',
+      'home.builder.eyebrow': 'Planifiez avec notre équipe concierge',
+      'home.builder.heading': 'On crée votre journée parfaite',
       'home.builder.copy':
-        'Share your idea by email and receive a personalized quote, or book a video call with our team to fine-tune every detail.',
-      'home.builder.formAria': 'Send your perfect day details',
-      'home.builder.nameLabel': 'Name',
-      'home.builder.namePlaceholder': 'Your name',
-      'home.builder.emailLabel': 'Email',
-      'home.builder.emailPlaceholder': 'you@example.com',
-      'home.builder.phoneLabel': 'Phone',
+        'Partagez votre idée par courriel et recevez un devis personnalisé, ou réservez un appel vidéo pour peaufiner chaque détail.',
+      'home.builder.formAria': 'Envoyer les détails de votre journée idéale',
+      'home.builder.nameLabel': 'Nom',
+      'home.builder.namePlaceholder': 'Votre nom',
+      'home.builder.emailLabel': 'Courriel',
+      'home.builder.emailPlaceholder': 'vous@exemple.com',
+      'home.builder.phoneLabel': 'Téléphone',
       'home.builder.phonePlaceholder': '+52 1 555 555 5555',
-      'home.builder.notesLabel': 'Tell us about your idea',
-      'home.builder.notesPlaceholder': 'Include the date, vibe, and any must-do experiences.',
-      'home.builder.submit': 'Send my idea',
-      'home.builder.listHeading': 'Tell us about your dream day',
-      'home.builder.pointOne': 'Share the vibe you want: relaxed, high-energy, romantic, or off-grid.',
-      'home.builder.pointTwo': 'Add any must-do activities, dining styles, or timing preferences.',
+      'home.builder.notesLabel': 'Parlez-nous de votre idée',
+      'home.builder.notesPlaceholder': 'Indiquez la date, l’ambiance et les incontournables.',
+      'home.builder.submit': 'Envoyer mon idée',
+      'home.builder.listHeading': 'Parlez-nous de votre journée rêvée',
+      'home.builder.pointOne':
+        'Partagez l’ambiance souhaitée : relax, pleine d’énergie, romantique ou hors réseau.',
+      'home.builder.pointTwo': 'Ajoutez les activités incontournables, le style de repas ou vos préférences d’horaire.',
       'home.builder.pointThree':
-        'You’ll receive a personalized quote or the option to connect with our team by video call.',
+        'Vous recevrez un devis personnalisé ou l’option de discuter en vidéo avec notre équipe.',
       'home.builder.emailFallback':
-        'Prefer email? Reach us directly at <a href="mailto:info@beyondthereefmexico.com">info@beyondthereefmexico.com</a>.',
-      'home.builder.emailSubject': 'Custom day idea from {{name}}',
-      'home.builder.status.missing': 'Please add your name, email, and idea so we can craft your quote.',
-      'home.builder.status.prompt': 'Opening your email app to send the details to our concierge.',
-      'home.accent.eyebrow': 'Why travelers love us',
-      'home.accent.heading': 'Private, Stress-Free Excursions',
-      'home.accent.locals.title': 'Led by certified guides',
+        'Vous préférez le courriel? Écrivez-nous à <a href="mailto:info@beyondthereefmexico.com">info@beyondthereefmexico.com</a>.',
+      'home.builder.emailSubject': 'Idée de journée sur mesure de {{name}}',
+      'home.builder.status.missing':
+        'Veuillez ajouter votre nom, votre courriel et votre idée afin que nous puissions préparer votre devis.',
+      'home.builder.status.prompt': 'Ouverture de votre appli courriel pour envoyer les détails à notre concierge.',
+      'home.accent.eyebrow': 'Pourquoi on nous choisit',
+      'home.accent.heading': 'Excursions privées, sans stress',
+      'home.accent.locals.title': 'Guides certifiés',
       'home.accent.locals.copy':
-        'Our certified guides bring years of professional experience, crafting insider-only moments you cannot find on a brochure.',
-      'home.accent.collab.title': 'Can’t find the tour you want?',
+        'Nos guides certifiés cumulent des années d’expérience et créent des moments privilégiés introuvables dans les brochures.',
+      'home.accent.collab.title': 'Vous ne trouvez pas l’excursion parfaite?',
       'home.accent.collab.copy':
-        'Reach out and we’ll schedule a call or video chat to custom-build your perfect excursions.',
-      'home.accent.execution.title': 'Worry-free tours',
+        'Écrivez-nous et nous planifierons un appel ou une visioconférence pour créer votre excursion idéale.',
+      'home.accent.execution.title': 'Excursions sans souci',
       'home.accent.execution.copy':
-        'Your tour, your time, no hidden fees, with transfers, tickets, and timing handled so you just enjoy.',
-      'home.cta.heading': 'Ready to build your dream tour?',
-      'home.cta.copy': 'Reach out and we’ll design the right experience for you.',
-      'home.cta.button': 'Email us now'
+        'Votre excursion, votre horaire, sans frais cachés : transferts, billets et horaires sont gérés pour que vous profitiez.',
+      'home.cta.heading': 'Prêt à créer votre excursion de rêve?',
+      'home.cta.copy': 'Écrivez-nous et nous créerons l’expérience parfaite pour vous.',
+      'home.cta.button': 'Nous écrire maintenant'
     },
     tours: {
-      'page.title': 'Excursions & Private Tours | Beyond the Reef Mexico',
-      'tours.hero.aria': 'Excursion highlight reel',
-      'tours.hero.previous': 'Previous slide',
-      'tours.hero.next': 'Next slide',
-      'tours.hero.dots': 'Excursion slides',
-      'tours.hero.eyebrow': 'Build your tour',
-      'tours.hero.heading': 'Design experiences as unique as your crew',
+      'page.title': 'Excursions et visites privées | Québec Mexique',
+      'tours.hero.aria': 'Aperçu des excursions',
+      'tours.hero.previous': 'Diapositive précédente',
+      'tours.hero.next': 'Diapositive suivante',
+      'tours.hero.dots': 'Diapositives des excursions',
+      'tours.hero.eyebrow': 'Créez votre excursion',
+      'tours.hero.heading': 'Des expériences aussi uniques que votre groupe',
       'tours.hero.copy':
-        'Drag and drop curated activities, refine pacing, and invite your travel companions to collaborate in real time.',
-      'tours.assurance.eyebrow': 'Only you and the people you care',
-      'tours.assurance.heading': 'With more than 14 years of experience in tours',
+        'Glissez-déposez des activités sélectionnées, ajustez le rythme et invitez vos compagnons de voyage à collaborer en temps réel.',
+      'tours.assurance.eyebrow': 'Seulement vous et les gens que vous aimez',
+      'tours.assurance.heading': 'Plus de 14 ans d’expérience en excursions',
       'tours.assurance.copy':
-        '<span class="assurance-line">Newest vans in the industry</span><span class="assurance-line">Certified guides</span><span class="assurance-line">Safe meals tailored to allergies and special diets</span>',
-      'tours.assurance.item1.title': 'Private fleet & modern vans',
-      'tours.assurance.item1.copy': 'Ride in our newest vans with cold A/C, leather seating, pro captains, and zero shared groups.',
-      'tours.assurance.item2.title': 'Certified, professional guides',
-      'tours.assurance.item2.copy': 'Licensed, bilingual guides lead every tour with safety-first protocols and insider knowledge.',
-      'tours.assurance.item3.title': 'Safe food for every diet',
-      'tours.assurance.item3.copy': 'We include fresh, safe food and adapt menus for vegan, gluten-free, allergies, and special requests.',
-      'tours.grid.eyebrow': 'See every tour fast',
-      'tours.grid.heading': 'Our most popular private excursions',
-      'tours.grid.custom.title': 'Custom combinations',
-      'tours.grid.custom.copy':
-        'Mix scuba dives, culinary surprises, and remote hikes across islands. Our smart planner orchestrates logistics so you can focus on the fun.',
-      'tours.grid.pacing.title': 'Smart pacing',
-      'tours.grid.pacing.copy':
-        'We balance high-energy adventures with restorative interludes, ensuring every guest has time to recharge.',
-      'tours.grid.collab.title': 'Co-create instantly',
-      'tours.grid.collab.copy':
-        'Share a private link so your crew can vote, comment, or add new ideas. Our concierges can jump in live to fine-tune.',
-      'tours.steps.heading': 'How the custom builder works',
-      'tours.steps.one.title': 'Tell us about your dream',
-      'tours.steps.one.copy': 'Answer a few questions or import a mood board. We use your vibe to pre-select experiences.',
-      'tours.steps.two.title': 'Remix the plan',
-      'tours.steps.two.copy':
-        'Drag items between days, adjust timing, and add bespoke requests like photographers or private chefs.',
-      'tours.steps.three.title': 'Lock it in',
-      'tours.steps.three.copy':
-        'Collaborate with your concierge to finalize transfers, payments, and on-island support.',
-      'tours.contact.eyebrow': 'Your custom tour',
-      'tours.contact.heading': 'Want a tour that isn’t on the list?',
-      'tours.contact.copy':
-        'Tell us the date and any special diets or accessibility needs—we’ll design it, price it, and confirm fast.',
-      'tours.contact.point1': 'Bundle promo: book 3 tours and save 20% to 30%.',
-      'tours.contact.point2': 'Private-only service with new vans, pro captains, and certified guides.',
-      'tours.contact.point3': 'Safe food standards with menus adapted for vegan, gluten-free, and allergy requests.',
-      'tours.contact.channels':
-        'Prefer direct contact? Email <a href="mailto:info@beyondthereefmexico.com">info@beyondthereefmexico.com</a> or WhatsApp <a href="https://wa.me/529841670697" target="_blank" rel="noopener noreferrer">+52 984 167 0697</a>.',
-      'tours.contact.formAria': 'Share the tour you want',
-      'tours.contact.nameLabel': 'Name',
-      'tours.contact.namePlaceholder': 'Your name',
-      'tours.contact.emailLabel': 'Email',
-      'tours.contact.emailPlaceholder': 'you@example.com',
-      'tours.contact.phoneLabel': 'Phone',
-      'tours.contact.phonePlaceholder': '+52 1 555 555 5555',
-      'tours.contact.ideaLabel': 'Tell us about your idea',
-      'tours.contact.ideaPlaceholder': 'Include the date, vibe, diet needs, and any must-do experiences.',
-      'tours.contact.submit': 'Send my idea'
-    },
-    reviews: {
-      'page.title': 'Guest Reviews | Beyond the Reef Mexico',
-      'reviews.hero.eyebrow': 'Guest love letters',
-      'reviews.hero.heading': 'Stories from travelers who went beyond',
-      'reviews.hero.copy':
-        'Hear how custom-crafted journeys and thoughtful touches turned bucket-list dreams into effortless escapes.',
-      'reviews.featured.heading': 'Featured reviews',
-      'reviews.featured.one.title': '“They thought of every detail.”',
-      'reviews.featured.one.copy':
-        '“From the midnight manta ray swim to the surprise anniversary dinner on a sandbar, the Beyond the Reef team went above and beyond. We never looked at our watches once.” - <strong>Cam &amp; Jordan</strong>',
-      'reviews.featured.two.title': '“Planning was actually fun.”',
-      'reviews.featured.two.copy':
-        '“We built the itinerary together during a video call and could see availability update live. Their concierge secured a private guide for my dad so he could explore at his own pace.” - <strong>Riya</strong>',
-      'reviews.featured.three.title': '“Our friends are still raving.”',
-      'reviews.featured.three.copy':
-        '“The group chat was blowing up with ideas. The Beyond the Reef planner kept everything organized and even added mixology classes based on our Spotify playlist.” - <strong>Diego &amp; crew</strong>',
-      'reviews.featured.four.title': '“Chichén Itzá made easy.”',
-      'reviews.featured.four.copy':
-        '“They arranged a sunrise entry so we had El Castillo almost to ourselves, plus a history-loving guide who knew every story. Breakfast tacos afterward were the best.” - <strong>Mariela &amp; Tomás</strong>',
-      'reviews.featured.five.title': '“Fishing with family felt effortless.”',
-      'reviews.featured.five.copy':
-        '“Beyond the Reef stocked the cooler, handled the licenses, and matched us with a patient captain so our kids could reel in their first mahi. Zero stress, just smiles.” - <strong>The Greene crew</strong>',
-      'reviews.featured.six.title': '“Street taco crawl perfection.”',
-      'reviews.featured.six.copy':
-        '“We ate our way through downtown—pastor, cochinita, birria—and never waited in line. Our host knew the vendors by name and even got my vegan friend amazing options.” - <strong>Avery</strong>',
-      'reviews.featured.seven.title': '“Cenote swim with no crowds.”',
-      'reviews.featured.seven.copy':
-        '“They found a hidden cenote and timed our arrival between buses. We floated in crystal water with just birds overhead. Towels, snacks, and photos were all handled.” - <strong>Jess &amp; Priya</strong>',
-      'reviews.featured.eight.title': '“Snorkeling that felt like a documentary.”',
-      'reviews.featured.eight.copy':
-        '“Our guide pointed out turtles, rays, and even a shy seahorse. Gear fit perfectly and the boat had shade, which my dad appreciated. We felt cared for start to finish.” - <strong>Samir</strong>',
-      'reviews.featured.nine.title': '“Romantic taco night on the beach.”',
-      'reviews.featured.nine.copy':
-        '“They turned a simple craving into a whole evening: chef-grilled tacos, aguas frescas, and fairy lights under the palms. It was our favorite date of the trip.” - <strong>Lena &amp; Marco</strong>',
-      'reviews.featured.ten.title': '“Accessible adventure done right.”',
-      'reviews.featured.ten.copy':
-        '“I use a wheelchair, and they coordinated ramps, transport, and a calm guide for exploring Tulum. I never had to explain twice—everything just worked.” - <strong>Natalie</strong>',
-      'reviews.featured.eleven.title': '“Spearfishing lessons that felt personal.”',
-      'reviews.featured.eleven.copy':
-        '“We wanted to learn safely, and they paired us with a local expert who focused on technique and reef respect. We left with new skills and a grilled catch lunch.” - <strong>Darius &amp; Cole</strong>',
-      'reviews.featured.twelve.title': '“Kids loved the lagoon night tour.”',
-      'reviews.featured.twelve.copy':
-        '“Bioluminescence, storytelling, and hot chocolate on deck—every detail was thought through. Even our teenager put the phone away to watch the stars.” - <strong>Ruth &amp; family</strong>',
-      'reviews.featured.thirteen.title': '“Foodie day from market to mezcal.”',
-      'reviews.featured.thirteen.copy':
-        '“We started at the local market for spices, took a cooking class, and ended with a mezcal tasting led by a maestro. It felt authentic, not touristy.” - <strong>Eduardo</strong>',
-      'reviews.share.heading': 'Share your experience',
-      'reviews.share.copy':
-        'Email <a href="mailto:info@beyondthereefmexico.com">info@beyondthereefmexico.com</a> with a highlight reel or tag us on social with <strong>#BeyondTheReef</strong> for a chance to be featured.'
-    },
-    story: {
-      'page.title': 'Our Story | Beyond the Reef Mexico',
-      'story.hero.eyebrow': 'Our story',
-      'story.hero.heading': 'Born from a love of the sea and storytelling',
-      'story.hero.copy':
-        'Every experience is thoughtfully designed to feel personal, seamless, and genuinely human.',
-      'story.intro.heading': 'Beyond The Reef Mexico',
-      'story.intro.p1':
-        'Our company was born from a simple realization: travel experiences had become rushed, impersonal, and disconnected.',
-      'story.intro.p2': 'We knew there had to be a better way.',
-      'story.intro.p3':
-        'Instead of crowded buses, shared pickups that steal hours of your vacation, and scripted tours, we chose a different path: one built around time, comfort, and real human connection.',
-      'story.intro.p4':
-        'Every experience we offer is thoughtfully designed around you. No shared transportation. No long detours. No compromises. From private transfers to carefully selected local guides, every detail exists to create a smooth, meaningful, and unforgettable day.',
-      'story.intro.p5':
-        'Our guides are not just employees; they are passionate professionals who are paid well, respected, and proud of the work they do. That pride translates directly into the energy, care, and authenticity you feel throughout your experience.',
-      'story.intro.p6':
-        'We believe the best moments happen when people feel relaxed, heard, and genuinely connected. That belief shapes everything we do from how we plan our tours to how we treat our guests and our team.',
-      'story.intro.p7':
-        'If an experience does not meet your expectations, we make it right. Because trust, integrity, and human connection matter more than volume.',
-      'story.intro.p8': 'This is not mass tourism. This is travel done with intention.',
-      'story.values.connection.title': 'Real connections',
-      'story.values.connection.copy':
-        'We build every experience around genuine human connection so guests feel welcomed, understood, and part of the places they visit.',
-      'story.values.wages.title': 'All guides make living wages',
-      'story.values.wages.copy':
-        'Our guides earn strong, reliable incomes with respect and stability, allowing them to focus fully on delivering exceptional hospitality.',
-      'story.values.awareness.title': 'Social awareness',
-      'story.values.awareness.copy':
-        'We act with empathy and cultural sensitivity, partnering with local communities to ensure tourism benefits everyone involved.',
-      'story.crew.heading': 'Meet the crew',
-      'story.crew.lila.title': 'Lila Reyes - Founder',
-      'story.crew.lila.copy':
-        'A marine biologist turned travel designer, Lila launched Beyond the Reef to share hidden reefs and island communities with respectful explorers.',
-      'story.crew.makai.title': 'Makai Thompson - Experience Architect',
-      'story.crew.makai.copy':
-        'Raised between three islands, Makai weaves cultural rituals, local artisans, and signature flavors into each itinerary.',
-      'story.crew.sami.title': 'Sami Chen - Technology Lead',
-      'story.crew.sami.copy':
-        'Sami built our collaborative planning platform with real-time availability checks and concierge messaging that feels like texting a friend.',
-      'story.values.heading': 'What we stand for',
-      'story.values.regen.title': 'Regenerative travel',
-      'story.values.regen.copy':
-        'We partner with community-led conservation projects and donate a portion of every itinerary to reef restoration.',
-      'story.values.hospitality.title': 'Hospitality with heart',
-      'story.values.hospitality.copy':
-        'Your hosts welcome you like family, preparing meaningful surprises and thoughtful touches along the way.',
-      'story.values.tech.title': 'Technology that disappears',
-      'story.values.tech.copy':
-        'The planning tools are powerful, yet effortless, so you stay focused on excitement rather than logistics.'
-    },
-    'tour-detail': {
-      'page.title': 'Beyond the Reef Mexico | Tour Details',
-      'tour.hero.aria': 'Tour overview',
-      'tour.hero.eyebrow': 'Adventures Loved by Travelers',
-      'tour.gallery.previous': 'Previous photo',
-      'tour.gallery.next': 'Next photo',
-      'tour.details.heading': 'Plan every detail with confidence',
-      'tour.details.copy': 'Everything you need to know before you reserve.',
-      'tour.details.about': 'About this experience',
-      'tour.details.includes': "What's included",
-      'tour.booking.label': 'Reserve now',
-      'tour.booking.from': 'From',
-      'tour.booking.currency': 'USD',
-      'tour.booking.perPerson': 'per person',
-      'tour.booking.helper': 'Prices drop as you add more people.',
-      'tour.booking.guestsLabel': 'How many people?',
-      'tour.booking.nameLabel': 'Name',
-      'tour.booking.namePlaceholder': 'Your full name',
-      'tour.booking.emailLabel': 'Email',
-      'tour.booking.emailPlaceholder': 'you@email.com',
-      'tour.booking.phoneLabel': 'Phone number',
-      'tour.booking.phonePlaceholder': '+52 984 167 0697',
-      'tour.booking.datetimeLabel': 'Date & time of the activity',
-      'tour.booking.datetimeUnknown': 'Not sure yet',
-      'tour.booking.pickupLabel': 'Pick-up location',
-      'tour.booking.pickupPlaceholder': 'Hotel or meeting point',
-      'tour.booking.submit': 'Book now',
-      'tour.booking.note': 'No payment collected here - we confirm availability and follow up right away.',
-      'tour.booking.disclaimer': 'Prices and promotional offers are subject to change without prior notice.',
-      'tour.booking.status.hold': 'Holding {{guests}} spot(s) for {{tour}}. We will confirm pick-up at {{pickup}} right away.',
-      'tour.booking.status.missingService': 'Please connect the booking form to your email service to receive requests.',
-      'tour.booking.status.sent': 'Request sent! We will confirm availability and follow up right away.',
-      'tour.booking.status.error': 'Something went wrong sending your request. Please try again shortly.',
-      'tour.booking.status.unavailable': 'Unable to send your request right now. Please try again shortly.',
-      'tour.booking.pickupFallback': 'your location',
-      'tour.booking.datetimeFallback': 'Not provided',
-      'tour.related.aria': 'Other adventures',
-      'tour.related.heading': 'Keep exploring',
-      'tour.related.copy': 'Travelers also loved these journeys.',
-      'tour.related.previous': 'Previous tours',
-      'tour.related.next': 'Next tours'
-    }
-  },
-  es: {
-    global: {
-      'nav.primary': 'Principal',
-      'nav.toggle': 'Mostrar u ocultar la navegación',
-      'nav.home': 'Inicio',
-      'nav.create': 'Excursiones',
-      'nav.reviews': 'Reseñas',
-      'nav.story': 'Nuestra historia',
-      'footer.rights': 'Beyond the Reef Mexico. Todos los derechos reservados.',
-      'floatingContact.aria': 'Opciones de contacto rápido',
-      'floatingContact.whatsappAria': 'Chatear en WhatsApp',
-      'floatingContact.emailAria': 'Enviar correo a Beyond the Reef Mexico',
-      'floatingContact.instagramAria': 'Abrir Instagram',
-      'floatingContact.whatsappLabel': 'WhatsApp',
-      'floatingContact.emailLabel': 'Correo',
-      'floatingContact.instagramLabel': 'Instagram',
-      'themeToggle.dark': 'Modo oscuro',
-      'themeToggle.light': 'Modo claro',
-      'heroSlider.goToSlide': 'Ir a la diapositiva {{index}}',
-      'tourBuilder.remove': 'Eliminar',
-      'inquiry.emailSubject': 'Idea de día personalizado de {{name}}',
-      'inquiry.emailBody.nameLabel': 'Nombre',
-      'inquiry.emailBody.emailLabel': 'Correo',
-      'inquiry.emailBody.phoneLabel': 'Teléfono',
-      'inquiry.emailBody.ideaLabel': 'Idea del viaje',
-      'inquiry.status.missing': 'Por favor agrega tu nombre, correo e idea para crear tu cotización.',
-      'inquiry.status.sending': 'Enviando tu solicitud al equipo concierge.',
-      'inquiry.status.sent': '¡Gracias! Recibimos tu solicitud y responderemos pronto.',
-      'inquiry.status.error': 'Ocurrió un error al enviar tu solicitud. Intenta de nuevo.',
-      'inquiry.status.unavailable': 'No pudimos enviar tu solicitud. Intenta de nuevo en unos minutos.',
-      'inquiry.status.missingService': 'Conecta este formulario a un servicio de correo para recibir solicitudes.',
-      'tour.card.viewDetails': 'Ver detalles',
-      'tour.card.bookNow': 'Reservar ahora',
-      'tour.card.privateBadge': 'Tour privado',
-      'tour.card.halfDay': 'Medio día',
-      'tour.card.fullDay': 'Día completo',
-      'tour.card.viewAria': 'Ver {{name}}'
-    },
-    home: {
-      'page.title': 'Beyond the Reef Mexico',
-      'home.hero.aria': 'Experiencias destacadas',
-      'home.hero.heading': 'Pura adrenalina. Naturaleza indómita. Tu historia en marcha.',
-      'home.hero.description':
-        'No es solo una excursión: es libertad desatada. Nada con tortugas, sumérgete en cenotes, cruza lagunas a toda velocidad y explora antiguas ruinas mayas. Sin multitudes. Sin límites. Solo aventura pura en el corazón de la Riviera Maya. Tus reglas. Tu ritmo. Tu recuerdo inolvidable. Esto no es turismo. Esto es Beyond the Reef.',
-      'home.hero.cta': 'Ver todas nuestras excursiones privadas',
-      'home.hero.previous': 'Diapositiva anterior',
-      'home.hero.next': 'Siguiente diapositiva',
-      'home.hero.dots': 'Diapositivas destacadas',
-      'home.difference.heading': 'Vive la diferencia',
-      'home.difference.captured.title': 'Capturado',
-      'home.difference.captured.copy': 'Fotografía incluida en cada tour',
-      'home.difference.pace.title': 'Marca el ritmo',
-      'home.difference.pace.copy': 'Elige tu horario, evita traslados y diseña tu propio itinerario',
-      'home.difference.journey.title': 'Tu travesía',
-      'home.difference.journey.copy': 'Snorkel, explorar, saborear o relajarte: tú decides',
-      'home.difference.surprises.title': 'Sin sorpresas',
-      'home.difference.surprises.copy': 'Sin costos ocultos, sin cargos extra, solo aventura',
-      'home.difference.excellence.title': 'Excelencia',
-      'home.difference.excellence.copy': 'No lo decimos nosotros: lo dicen nuestros huéspedes. Cinco estrellas siempre.',
-      'home.favorites.heading': 'Aventuras que enamoran a los viajeros',
-      'home.favorites.copy': 'Desliza para conocer las ofertas limitadas de los tours que más enamoran a nuestros viajeros.',
-      'home.favorites.previous': 'Tours anteriores',
-      'home.favorites.next': 'Más tours',
-      'home.favorites.card1.tag': 'Imprescindible',
-      'home.favorites.card1.title': 'Nado con tiburón ballena',
-      'home.favorites.card1.badge': '-30%',
-      'home.favorites.card1.deal': 'Hasta 30% de descuento',
-      'home.favorites.card1.copy':
-        'Alquila un barco privado con guías biólogos marinos y nada junto a estos gigantes pacíficos al amanecer.',
-      'home.favorites.card1.cta': 'Más información',
-      'home.favorites.card2.tag': 'Favorito de los huéspedes',
-      'home.favorites.card2.title': 'El Taco Tour',
-      'home.favorites.card2.badge': '-25%',
-      'home.favorites.card2.deal': 'Hasta 25% de descuento',
-      'home.favorites.card2.copy':
-        'Saborea taquerías ocultas con un anfitrión local que marida mezcales y comparte leyendas callejeras.',
-      'home.favorites.card2.cta': 'Más información',
-      'home.favorites.card3.tag': 'Cupos limitados',
-      'home.favorites.card3.title': 'Snorkel en El Cielo Cozumel',
-      'home.favorites.card3.badge': '-22%',
-      'home.favorites.card3.deal': 'Hasta 22% de descuento',
-      'home.favorites.card3.copy':
-        'Flota sobre jardines de estrellas de mar y arrecifes neón en Cozumel con un capitán que elige el banco de arena en su punto más claro.',
-      'home.favorites.card3.cta': 'Más información',
-      'home.favorites.card4.tag': 'Listo para fotos',
-      'home.favorites.card4.title': 'Experiencia Insta en Tulum',
-      'home.favorites.card4.badge': '-18%',
-      'home.favorites.card4.deal': 'Hasta 18% de descuento',
-      'home.favorites.card4.copy':
-        'Captura tomas cinematográficas en las ruinas y cenotes de Tulum con un director creativo preparando cada escena.',
-      'home.favorites.card4.cta': 'Más información',
-      'home.builder.eyebrow': 'Planifica con nuestro equipo concierge',
-      'home.builder.heading': 'Creamos tu día perfecto',
-      'home.builder.copy':
-        'Envíanos tu idea y te responderemos con una cotización personalizada de tu día, o agenda una videollamada con nuestro equipo concierge para pulir cada detalle.',
-      'home.builder.formAria': 'Envía los detalles de tu día perfecto',
-      'home.builder.nameLabel': 'Nombre',
-      'home.builder.namePlaceholder': 'Tu nombre',
-      'home.builder.emailLabel': 'Correo electrónico',
-      'home.builder.emailPlaceholder': 'tu@correo.com',
-      'home.builder.phoneLabel': 'Teléfono',
-      'home.builder.phonePlaceholder': '+52 1 555 555 5555',
-      'home.builder.notesLabel': 'Cuéntanos tu idea',
-      'home.builder.notesPlaceholder': 'Incluye la fecha, el ambiente y las experiencias imperdibles.',
-      'home.builder.submit': 'Enviar mi idea',
-      'home.builder.listHeading': 'Cuéntanos sobre tu día soñado',
-      'home.builder.pointOne': 'Comparte el ambiente que buscas: relajado, con adrenalina, romántico o fuera de lo común.',
-      'home.builder.pointTwo': 'Agrega actividades imprescindibles, estilo de comida o preferencias de horario.',
-      'home.builder.pointThree': 'Te responderemos con una cotización a medida o agendaremos una videollamada con nuestro equipo concierge.',
-      'home.builder.emailFallback':
-        '¿Prefieres correo? Escríbenos a <a href="mailto:info@beyondthereefmexico.com">info@beyondthereefmexico.com</a>.',
-      'home.builder.emailSubject': 'Idea de día personalizado de {{name}}',
-      'home.builder.status.missing': 'Por favor agrega tu nombre, correo e idea para crear tu cotización.',
-      'home.builder.status.prompt': 'Abriendo tu app de correo para enviar los detalles a nuestro concierge.',
-      'home.accent.eyebrow': 'Por qué nos aman los viajeros',
-      'home.accent.heading': 'Atención concierge VIP para la excursión inolvidable de tu familia',
-      'home.accent.locals.title': 'Guiado por guías certificados',
-      'home.accent.locals.copy':
-        'Nuestros guías certificados tienen años de experiencia profesional y organizan momentos únicos que no encontrarás en un folleto.',
-      'home.accent.collab.title': '¿No encuentras el tour ideal?',
-      'home.accent.collab.copy':
-        'Escríbenos y agendamos una llamada o videollamada para crear tus vacaciones perfectas a la medida.',
-      'home.accent.execution.title': 'Tours sin preocupaciones',
-      'home.accent.execution.copy':
-        'Tu tour, tu horario, sin cargos ocultos: coordinamos traslados, boletos y tiempos para que solo disfrutes.',
-      'home.cta.heading': '¿Listo para diseñar tu tour soñado?',
-      'home.cta.copy': 'Escríbele a nuestro equipo de concierge y te enviaremos una propuesta personalizada en 24 horas.',
-      'home.cta.button': 'Escríbenos'
-    },
-    tours: {
-      'page.title': 'Excursiones y Tours Privados | Beyond the Reef Mexico',
-      'tours.hero.aria': 'Reel de excursiones destacadas',
-      'tours.hero.previous': 'Diapositiva anterior',
-      'tours.hero.next': 'Siguiente diapositiva',
-      'tours.hero.dots': 'Diapositivas de excursiones',
-      'tours.hero.eyebrow': 'Diseña tu tour',
-      'tours.hero.heading': 'Crea experiencias tan únicas como tu grupo',
-      'tours.hero.copy':
-        'Arrastra actividades seleccionadas, ajusta el ritmo e invita a tus acompañantes a colaborar en tiempo real.',
-      'tours.assurance.eyebrow': 'Solo tú y las personas que quieres',
-      'tours.assurance.heading': 'Más de 14 años de experiencia en tours',
-      'tours.assurance.copy':
-        '<span class="assurance-line">Las vans más nuevas de la industria</span><span class="assurance-line">Guías certificados</span><span class="assurance-line">Comidas seguras para alergias y dietas especiales</span>',
-      'tours.assurance.item1.title': 'Flota privada y vans modernas',
+        '<span class="assurance-line">Les vans les plus récentes de l’industrie</span><span class="assurance-line">Guides certifiés</span><span class="assurance-line">Repas sécuritaires pour allergies et diètes spéciales</span>',
+      'tours.assurance.item1.title': 'Flotte privée et vans modernes',
       'tours.assurance.item1.copy':
-        'Viaja en nuestras vans más nuevas con A/C frío, asientos de piel, capitanes expertos y cero grupos compartidos.',
-      'tours.assurance.item2.title': 'Guías certificados y profesionales',
+        'Voyagez dans nos vans les plus récentes avec A/C froide, sièges en cuir, capitaines pros et aucun groupe partagé.',
+      'tours.assurance.item2.title': 'Guides certifiés et professionnels',
       'tours.assurance.item2.copy':
-        'Guías bilingües con licencia lideran cada tour con protocolos de seguridad e información local.',
-      'tours.assurance.item3.title': 'Comida segura para cada dieta',
+        'Des guides certifiés et bilingues mènent chaque excursion avec des protocoles axés sur la sécurité.',
+      'tours.assurance.item3.title': 'Nourriture sécuritaire pour chaque diète',
       'tours.assurance.item3.copy':
-        'Incluimos alimentos frescos y adaptamos menús para veganos, gluten free, alergias y peticiones especiales.',
-      'tours.grid.eyebrow': 'Ve cada tour rápido',
-      'tours.grid.heading': 'Nuestras excursiones privadas más populares',
-      'tours.grid.custom.title': 'Combinaciones a medida',
+        'Nous incluons des repas frais et adaptons les menus pour végans, sans gluten, allergies et demandes spéciales.',
+      'tours.grid.eyebrow': 'Voir toutes les excursions rapidement',
+      'tours.grid.heading': 'Nos excursions privées les plus populaires',
+      'tours.grid.custom.title': 'Combinaisons sur mesure',
       'tours.grid.custom.copy':
-        'Mezcla buceo, sorpresas culinarias y caminatas remotas. Nuestro planificador inteligente coordina la logística para que solo te concentres en disfrutar.',
-      'tours.grid.pacing.title': 'Ritmo inteligente',
+        'Mélangez plongées, surprises culinaires et randonnées isolées. Notre planificateur intelligent orchestre la logistique.',
+      'tours.grid.pacing.title': 'Rythme équilibré',
       'tours.grid.pacing.copy':
-        'Equilibramos aventuras llenas de energía con momentos de descanso para que todos recarguen energías.',
-      'tours.grid.collab.title': 'Co-creación al instante',
+        'Nous équilibrons les aventures énergiques avec des pauses réparatrices pour que chacun recharge ses batteries.',
+      'tours.grid.collab.title': 'Co-créez en direct',
       'tours.grid.collab.copy':
-        'Comparte un enlace privado para que tu equipo vote, comente o agregue nuevas ideas. Nuestros concierges pueden sumarse en vivo para ajustarlo.',
-      'tours.steps.heading': 'Cómo funciona el constructor personalizado',
-      'tours.steps.one.title': 'Cuéntanos tu sueño',
-      'tours.steps.one.copy': 'Responde algunas preguntas o comparte un mood board. Usamos tu estilo para preseleccionar experiencias.',
-      'tours.steps.two.title': 'Reinventa el plan',
+        'Partagez un lien privé pour que votre groupe vote, commente ou ajoute des idées. Nos concierges ajustent en direct.',
+      'tours.steps.heading': 'Comment fonctionne le créateur sur mesure',
+      'tours.steps.one.title': 'Parlez-nous de votre rêve',
+      'tours.steps.one.copy': 'Répondez à quelques questions ou partagez un moodboard. On pré-sélectionne les expériences.',
+      'tours.steps.two.title': 'Ajustez le plan',
       'tours.steps.two.copy':
-        'Reordena actividades por día, ajusta horarios y agrega peticiones especiales como fotógrafos o chefs privados.',
-      'tours.steps.three.title': 'Confírmalo todo',
+        'Déplacez les activités, ajustez les horaires et ajoutez des demandes spéciales comme un photographe privé.',
+      'tours.steps.three.title': 'Validez le tout',
       'tours.steps.three.copy':
-        'Colabora con tu concierge para definir traslados, pagos y asistencia en destino.',
-      'tours.contact.eyebrow': 'Tu tour personalizado',
-      'tours.contact.heading': '¿Quieres un tour que no está en la lista?',
+        'Collaborez avec votre concierge pour finaliser les transferts, paiements et l’assistance sur place.',
+      'tours.contact.eyebrow': 'Votre excursion sur mesure',
+      'tours.contact.heading': 'Vous voulez une excursion qui n’est pas dans la liste?',
       'tours.contact.copy':
-        'Cuéntanos la fecha y cualquier dieta especial o necesidad de accesibilidad: lo diseñamos, cotizamos y confirmamos rápido.',
-      'tours.contact.point1': 'Promo paquete: reserva 3 tours y ahorra de 20% a 30%.',
-      'tours.contact.point2': 'Servicio 100% privado con vans nuevas, capitanes expertos y guías certificados.',
-      'tours.contact.point3': 'Estándares de comida segura con menús adaptados para veganos, gluten free y alergias.',
+        'Indiquez la date et toute diète spéciale ou besoin d’accessibilité : on la conçoit, on la chiffre et on confirme vite.',
+      'tours.contact.point1': 'Promo combo : réservez 3 excursions et économisez de 20 % à 30 %.',
+      'tours.contact.point2': 'Service 100 % privé avec vans neuves, capitaines pros et guides certifiés.',
+      'tours.contact.point3': 'Normes de nourriture sécuritaire avec menus adaptés aux végans, sans gluten et allergies.',
       'tours.contact.channels':
-        '¿Prefieres contacto directo? Escribe a <a href="mailto:info@beyondthereefmexico.com">info@beyondthereefmexico.com</a> o WhatsApp <a href="https://wa.me/529841670697" target="_blank" rel="noopener noreferrer">+52 984 167 0697</a>.',
-      'tours.contact.formAria': 'Comparte el tour que quieres',
-      'tours.contact.nameLabel': 'Nombre',
-      'tours.contact.namePlaceholder': 'Tu nombre',
-      'tours.contact.emailLabel': 'Correo electrónico',
-      'tours.contact.emailPlaceholder': 'tu@correo.com',
-      'tours.contact.phoneLabel': 'Teléfono',
+        'Vous préférez un contact direct? Écrivez à <a href="mailto:info@beyondthereefmexico.com">info@beyondthereefmexico.com</a> ou WhatsApp <a href="https://wa.me/529841670697" target="_blank" rel="noopener noreferrer">+52 984 167 0697</a>.',
+      'tours.contact.formAria': 'Partagez l’excursion souhaitée',
+      'tours.contact.nameLabel': 'Nom',
+      'tours.contact.namePlaceholder': 'Votre nom',
+      'tours.contact.emailLabel': 'Courriel',
+      'tours.contact.emailPlaceholder': 'vous@exemple.com',
+      'tours.contact.phoneLabel': 'Téléphone',
       'tours.contact.phonePlaceholder': '+52 1 555 555 5555',
-      'tours.contact.ideaLabel': 'Cuéntanos tu idea',
-      'tours.contact.ideaPlaceholder': 'Incluye la fecha, el ambiente, dietas y experiencias imperdibles.',
-      'tours.contact.submit': 'Enviar mi idea'
+      'tours.contact.ideaLabel': 'Parlez-nous de votre idée',
+      'tours.contact.ideaPlaceholder': 'Ajoutez la date, l’ambiance, les diètes et les incontournables.',
+      'tours.contact.submit': 'Envoyer mon idée'
     },
     reviews: {
-      'page.title': 'Reseñas de huéspedes | Beyond the Reef Mexico',
-      'reviews.hero.eyebrow': 'Cartas de amor de nuestros huéspedes',
-      'reviews.hero.heading': 'Historias de viajeros que fueron más allá',
+      'page.title': 'Avis des voyageurs | Québec Mexique',
+      'reviews.hero.eyebrow': 'Lettres d’amour de nos voyageurs',
+      'reviews.hero.heading': 'Histoires de voyageurs qui sont allés plus loin',
       'reviews.hero.copy':
-        'Descubre cómo los viajes personalizados y los detalles cuidadosos convirtieron sueños en escapadas sin esfuerzo.',
-      'reviews.featured.heading': 'Reseñas destacadas',
-      'reviews.featured.one.title': '“Pensaron en cada detalle.”',
+        'Découvrez comment des voyages sur mesure et des attentions bien pensées ont transformé des rêves en escapades sans effort.',
+      'reviews.featured.heading': 'Avis en vedette',
+      'reviews.featured.one.title': '“Ils ont pensé à chaque détail.”',
       'reviews.featured.one.copy':
-        '“Desde el nado nocturno con mantarrayas hasta la cena sorpresa de aniversario en un banco de arena, el equipo de Beyond the Reef superó todas las expectativas. No miramos el reloj ni una sola vez.” - <strong>Cam &amp; Jordan</strong>',
-      'reviews.featured.two.title': '“Planear fue realmente divertido.”',
+        '“De la nage nocturne avec les raies manta au souper surprise d’anniversaire sur un banc de sable, l’équipe de Québec Mexique a tout dépassé. On n’a jamais regardé l’heure.” - <strong>Cam &amp; Jordan</strong>',
+      'reviews.featured.two.title': '“Planifier, c’était vraiment le fun.”',
       'reviews.featured.two.copy':
-        '“Construimos el itinerario juntos durante una videollamada y veíamos la disponibilidad en vivo. Su concierge consiguió un guía privado para mi papá para que explorara a su propio ritmo.” - <strong>Riya</strong>',
-      'reviews.featured.three.title': '“Nuestros amigos siguen hablando del viaje.”',
+        '“On a bâti l’itinéraire ensemble en appel vidéo et on voyait les disponibilités en direct. Leur concierge a réservé un guide privé pour mon père afin qu’il explore à son rythme.” - <strong>Riya</strong>',
+      'reviews.featured.three.title': '“Nos amis en parlent encore.”',
       'reviews.featured.three.copy':
-        '“El chat del grupo no dejaba de llenarse de ideas. El planificador de Beyond the Reef mantuvo todo organizado e incluso añadió clases de mixología inspiradas en nuestra lista de Spotify.” - <strong>Diego &amp; crew</strong>',
-      'reviews.featured.four.title': '“Chichén Itzá sin complicaciones.”',
+        '“Le chat de groupe débordait d’idées. Le planificateur de Québec Mexique a tout gardé organisé et a même ajouté des cours de mixologie inspirés de notre liste Spotify.” - <strong>Diego &amp; crew</strong>',
+      'reviews.featured.four.title': '“Chichén Itzá sans stress.”',
       'reviews.featured.four.copy':
-        '“Organizaron la entrada al amanecer para tener El Castillo casi para nosotros, con un guía amante de la historia que conocía cada relato. Los tacos del desayuno fueron lo máximo.” - <strong>Mariela &amp; Tomás</strong>',
-      'reviews.featured.five.title': '“Pescar en familia fue facilísimo.”',
+        '“Ils ont planifié l’entrée au lever du soleil pour avoir El Castillo presque à nous, avec un guide passionné d’histoire. Les tacos du déjeuner étaient un moment fort.” - <strong>Mariela &amp; Tomás</strong>',
+      'reviews.featured.five.title': '“Pêche en famille, facile.”',
       'reviews.featured.five.copy':
-        '“Beyond the Reef llenó la hielera, gestionó licencias y nos asignó un capitán paciente para que nuestros niños pescaran su primer mahi. Cero estrés, pura sonrisa.” - <strong>The Greene crew</strong>',
-      'reviews.featured.six.title': '“Ruta de tacos callejeros perfecta.”',
+        '“Québec Mexique a rempli la glacière, géré les permis et nous a jumelés à un capitaine patient pour que nos enfants attrapent leur premier mahi. Zéro stress, juste des sourires.” - <strong>The Greene crew</strong>',
+      'reviews.featured.six.title': '“Parfaite tournée de tacos de rue.”',
       'reviews.featured.six.copy':
-        '“Comimos en el centro: pastor, cochinita, birria, y nunca hicimos fila. Nuestro anfitrión conocía a los vendedores por nombre y consiguió opciones increíbles para mi amiga vegana.” - <strong>Avery</strong>',
-      'reviews.featured.seven.title': '“Cenote sin multitudes.”',
+        '“On a mangé au centre-ville : al pastor, cochinita, birria, sans jamais faire la file. Notre hôte connaissait les vendeurs par leur prénom et a trouvé des options végés pour mon amie.” - <strong>Avery</strong>',
+      'reviews.featured.seven.title': '“Cenote sans foule.”',
       'reviews.featured.seven.copy':
-        '“Encontraron un cenote escondido y coordinaron la llegada entre los autobuses. Flotamos en agua cristalina con solo aves de fondo. Toallas, snacks y fotos estuvieron resueltos.” - <strong>Jess &amp; Priya</strong>',
-      'reviews.featured.eight.title': '“Snorkel de documental.”',
+        '“Ils ont trouvé un cenote caché et ont calé notre arrivée entre les autobus. On flottait dans une eau cristalline avec seulement les oiseaux en fond. Serviettes, collations et photos étaient gérées.” - <strong>Jess &amp; Priya</strong>',
+      'reviews.featured.eight.title': '“Snorkel digne d’un documentaire.”',
       'reviews.featured.eight.copy':
-        '“Nuestro guía señaló tortugas, rayas y hasta un caballito de mar tímido. El equipo quedó perfecto y el barco tenía sombra, algo que mi papá agradeció. Nos cuidaron de inicio a fin.” - <strong>Samir</strong>',
-      'reviews.featured.nine.title': '“Noche romántica de tacos en la playa.”',
+        '“Notre guide a pointé tortues, raies et même un petit hippocampe timide. L’équipement était parfait et le bateau avait de l’ombre, ce que mon père a apprécié. Ils se sont occupés de tout.” - <strong>Samir</strong>',
+      'reviews.featured.nine.title': '“Soirée tacos romantique sur la plage.”',
       'reviews.featured.nine.copy':
-        '“Convirtieron un antojo en una noche completa: tacos a la parrilla, aguas frescas y luces bajo las palmas. Fue nuestra cita favorita del viaje.” - <strong>Lena &amp; Marco</strong>',
-      'reviews.featured.ten.title': '“Aventura accesible, bien hecha.”',
+        '“Ils ont transformé une envie en soirée complète : tacos grillés, aguas frescas et lumières sous les palmiers. C’était notre date préférée du voyage.” - <strong>Lena &amp; Marco</strong>',
+      'reviews.featured.ten.title': '“Aventure accessible, bien organisée.”',
       'reviews.featured.ten.copy':
-        '“Uso silla de ruedas y coordinaron rampas, transporte y un guía tranquilo para recorrer Tulum. Nunca tuve que explicar dos veces; todo funcionó.” - <strong>Natalie</strong>',
-      'reviews.featured.eleven.title': '“Clases de pesca submarina muy personales.”',
+        '“J’utilise un fauteuil roulant et ils ont coordonné rampes, transport et un guide patient pour Tulum. Je n’ai jamais eu à répéter quoi que ce soit. Tout a roulé.” - <strong>Natalie</strong>',
+      'reviews.featured.eleven.title': '“Cours de pêche sous-marine très personnalisés.”',
       'reviews.featured.eleven.copy':
-        '“Queríamos aprender con seguridad y nos asignaron un experto local enfocado en técnica y respeto al arrecife. Nos fuimos con nuevas habilidades y un almuerzo con la pesca del día.” - <strong>Darius &amp; Cole</strong>',
-      'reviews.featured.twelve.title': '“A los niños les encantó el tour nocturno en la laguna.”',
+        '“On voulait apprendre en sécurité et ils nous ont jumelés à un expert local axé sur la technique et le respect du récif. On est repartis avec de nouvelles compétences et un dîner préparé avec notre prise.” - <strong>Darius &amp; Cole</strong>',
+      'reviews.featured.twelve.title': '“Les enfants ont adoré la sortie nocturne sur la lagune.”',
       'reviews.featured.twelve.copy':
-        '“Bioluminiscencia, historias y chocolate caliente en cubierta: cada detalle estuvo pensado. Hasta nuestro adolescente guardó el celular para ver las estrellas.” - <strong>Ruth &amp; family</strong>',
-      'reviews.featured.thirteen.title': '“Día foodie del mercado al mezcal.”',
+        '“Bioluminescence, histoires et chocolat chaud sur le pont : chaque détail était bien pensé. Même notre ado a laissé son cell pour regarder les étoiles.” - <strong>Ruth &amp; family</strong>',
+      'reviews.featured.thirteen.title': '“Journée gourmande du marché au mezcal.”',
       'reviews.featured.thirteen.copy':
-        '“Empezamos en el mercado local por especias, tomamos una clase de cocina y cerramos con una cata de mezcal con un maestro. Se sintió auténtico, nada turístico.” - <strong>Eduardo</strong>',
-      'reviews.share.heading': 'Comparte tu experiencia',
+        '“On a commencé au marché local pour les épices, pris un cours de cuisine et terminé par une dégustation de mezcal avec un maître. C’était authentique, jamais touristique.” - <strong>Eduardo</strong>',
+      'reviews.share.heading': 'Partagez votre expérience',
       'reviews.share.copy':
-        'Escríbenos a <a href="mailto:info@beyondthereefmexico.com">info@beyondthereefmexico.com</a> con los mejores momentos o etiquétanos en redes con <strong>#BeyondTheReef</strong> para tener la oportunidad de aparecer.'
+        'Écrivez-nous à <a href="mailto:info@beyondthereefmexico.com">info@beyondthereefmexico.com</a> avec vos meilleurs moments ou identifiez-nous avec <strong>#QuebecMexique</strong> pour avoir la chance d’apparaître.'
     },
     story: {
-      'page.title': 'Nuestra historia | Beyond the Reef Mexico',
-      'story.hero.eyebrow': 'Nuestra historia',
-      'story.hero.heading': 'Nacimos del amor por el mar y por contar historias',
+      'page.title': 'Notre histoire | Québec Mexique',
+      'story.hero.eyebrow': 'Notre histoire',
+      'story.hero.heading': 'Nés de l’amour de la mer et des récits',
       'story.hero.copy':
-        'Creemos que cada viajero merece una narrativa a la medida, creada por nuestro equipo, impulsada por la tecnología e impregnada de hospitalidad genuina.',
-      'story.intro.heading': 'Beyond The Reef Mexico',
+        'Nous croyons que chaque voyageur mérite un récit sur mesure, créé par notre équipe, soutenu par la technologie et rempli d’hospitalité authentique.',
+      'story.intro.heading': 'Québec Mexique',
       'story.intro.p1':
-        'Nuestra empresa nació de una simple realización: las experiencias de viaje se habían vuelto apresuradas, impersonales y desconectadas.',
-      'story.intro.p2': 'Sabíamos que debía existir una mejor forma.',
+        'Notre entreprise est née d’un constat simple : les expériences de voyage étaient devenues précipitées, impersonnelles et déconnectées.',
+      'story.intro.p2': 'On savait qu’il devait y avoir une meilleure façon.',
       'story.intro.p3':
-        'En lugar de autobuses llenos, recogidas compartidas que roban horas de tus vacaciones y tours guionados, elegimos un camino diferente: uno construido sobre el tiempo, la comodidad y la conexión humana real.',
+        'Au lieu des autobus bondés, des prises en charge partagées qui grugent vos vacances et des visites scénarisées, on a choisi une autre voie : le temps, le confort et la connexion humaine.',
       'story.intro.p4':
-        'Cada experiencia que ofrecemos está pensada en ti. Sin transporte compartido. Sin desvíos largos. Sin concesiones. Desde traslados privados hasta guías locales cuidadosamente seleccionados, cada detalle existe para crear un día fluido, significativo e inolvidable.',
+        'Chaque expérience est pensée pour vous. Aucun transport partagé. Aucun long détour. Aucun compromis. Des transferts privés aux guides locaux soigneusement choisis, tout est conçu pour une journée fluide, mémorable et significative.',
       'story.intro.p5':
-        'Nuestros guías no son solo empleados; son profesionales apasionados, bien remunerados, respetados y orgullosos de su trabajo. Ese orgullo se refleja en la energía, el cuidado y la autenticidad que se siente durante tu experiencia.',
+        'Nos guides ne sont pas de simples employés : ce sont des pros passionnés, bien rémunérés, respectés et fiers de leur travail. Cette fierté se ressent dans l’énergie, le soin et l’authenticité de chaque sortie.',
       'story.intro.p6':
-        'Creemos que los mejores momentos suceden cuando las personas se sienten relajadas, escuchadas y verdaderamente conectadas. Esa creencia guía todo lo que hacemos, desde cómo planeamos los tours hasta cómo tratamos a nuestros huéspedes y a nuestro equipo.',
+        'Nous croyons que les meilleurs moments arrivent quand les gens se sentent détendus, écoutés et vraiment connectés. Cette conviction guide tout ce que nous faisons.',
       'story.intro.p7':
-        'Si una experiencia no cumple tus expectativas, lo resolvemos. Porque la confianza, la integridad y la conexión humana importan más que el volumen.',
-      'story.intro.p8': 'Esto no es turismo masivo. Esto es viajar con intención.',
-      'story.values.connection.title': 'Conexiones reales',
+        'Si une expérience ne répond pas à vos attentes, on la corrige. Parce que la confiance, l’intégrité et la connexion humaine comptent plus que le volume.',
+      'story.intro.p8': 'Ce n’est pas du tourisme de masse. C’est voyager avec intention.',
+      'story.values.connection.title': 'Connexions authentiques',
       'story.values.connection.copy':
-        'Diseñamos cada experiencia alrededor de la conexión humana genuina para que nuestros huéspedes se sientan bienvenidos, comprendidos y parte de los lugares que visitan.',
-      'story.values.wages.title': 'Guías con salarios dignos',
+        'Nous concevons chaque expérience autour d’une vraie connexion humaine pour que nos invités se sentent accueillis et compris.',
+      'story.values.wages.title': 'Guides bien rémunérés',
       'story.values.wages.copy':
-        'Nuestros guías reciben ingresos sólidos y estables con respeto y estabilidad, para enfocarse por completo en una hospitalidad excepcional.',
-      'story.values.awareness.title': 'Conciencia social',
+        'Nos guides reçoivent des revenus stables et justes, avec respect et stabilité, pour se consacrer entièrement à l’hospitalité.',
+      'story.values.awareness.title': 'Conscience sociale',
       'story.values.awareness.copy':
-        'Actuamos con empatía y sensibilidad cultural, colaborando con comunidades locales para que el turismo beneficie a todos.',
-      'story.crew.heading': 'Conoce a la tripulación',
-      'story.crew.lila.title': 'Lila Reyes - Fundadora',
+        'Nous agissons avec empathie et sensibilité culturelle, en collaborant avec les communautés locales pour que le tourisme bénéficie à tous.',
+      'story.crew.heading': 'Rencontrez l’équipe',
+      'story.crew.lila.title': 'Lila Reyes - Fondatrice',
       'story.crew.lila.copy':
-        'Bióloga marina convertida en diseñadora de viajes, Lila creó Beyond the Reef para compartir arrecifes ocultos y comunidades isleñas con exploradores respetuosos.',
-      'story.crew.makai.title': 'Makai Thompson - Arquitecto de Experiencias',
+        'Biologiste marine devenue conceptrice de voyages, Lila a créé Québec Mexique pour partager des récifs cachés et des communautés insulaires avec des explorateurs respectueux.',
+      'story.crew.makai.title': 'Makai Thompson - Architecte d’expériences',
       'story.crew.makai.copy':
-        'Criado entre tres islas, Makai teje rituales culturales, artesanos locales y sabores distintivos en cada itinerario.',
-      'story.crew.sami.title': 'Sami Chen - Líder de Tecnología',
+        'Élevé entre trois îles, Makai tisse rituels culturels, artisans locaux et saveurs uniques dans chaque itinéraire.',
+      'story.crew.sami.title': 'Sami Chen - Responsable technologie',
       'story.crew.sami.copy':
-        'Sami desarrolló nuestra plataforma colaborativa con disponibilidad en tiempo real y mensajes de concierge que se sienten como chatear con un amigo.',
-      'story.values.heading': 'Nuestros valores',
-      'story.values.regen.title': 'Viajes regenerativos',
+        'Sami a développé notre plateforme collaborative avec disponibilités en direct et messages concierge qui ressemblent à un texto.',
+      'story.values.heading': 'Nos valeurs',
+      'story.values.regen.title': 'Voyages régénératifs',
       'story.values.regen.copy':
-        'Nos aliamos con proyectos comunitarios de conservación y destinamos parte de cada itinerario a la restauración de arrecifes.',
-      'story.values.hospitality.title': 'Hospitalidad con corazón',
+        'Nous nous associons à des projets communautaires de conservation et consacrons une partie de chaque itinéraire à la restauration des récifs.',
+      'story.values.hospitality.title': 'Hospitalité avec cœur',
       'story.values.hospitality.copy':
-        'Tus anfitriones te reciben como familia, preparando sorpresas significativas y detalles atentos durante todo el camino.',
-      'story.values.tech.title': 'Tecnología que se difumina',
+        'Vos hôtes vous accueillent comme de la famille, avec des surprises et de petites attentions tout au long du parcours.',
+      'story.values.tech.title': 'Technologie qui s’efface',
       'story.values.tech.copy':
-        'Nuestras herramientas de planificación son potentes pero sencillas, para que te enfoques en la emoción y no en la logística.'
+        'Nos outils de planification sont puissants, mais simples, pour que vous pensiez à l’émotion plutôt qu’à la logistique.'
     },
     'tour-detail': {
-      'page.title': 'Beyond the Reef Mexico | Detalles del Tour',
-      'tour.hero.aria': 'Resumen del tour',
-      'tour.hero.eyebrow': 'Aventuras favoritas de los viajeros',
-      'tour.gallery.previous': 'Foto anterior',
-      'tour.gallery.next': 'Siguiente foto',
-      'tour.details.heading': 'Planea cada detalle con confianza',
-      'tour.details.copy': 'Todo lo que necesitas saber antes de reservar.',
-      'tour.details.about': 'Sobre esta experiencia',
-      'tour.details.includes': 'Qué incluye',
-      'tour.booking.label': 'Reserva ahora',
-      'tour.booking.from': 'Desde',
+      'page.title': 'Québec Mexique | Détails de l’excursion',
+      'tour.hero.aria': 'Aperçu de l’excursion',
+      'tour.hero.eyebrow': 'Aventures favorites des voyageurs',
+      'tour.gallery.previous': 'Photo précédente',
+      'tour.gallery.next': 'Photo suivante',
+      'tour.details.heading': 'Planifiez chaque détail en toute confiance',
+      'tour.details.copy': 'Tout ce qu’il faut savoir avant de réserver.',
+      'tour.details.about': 'À propos de cette expérience',
+      'tour.details.includes': 'Ce qui est inclus',
+      'tour.booking.label': 'Réserver maintenant',
+      'tour.booking.from': 'À partir de',
       'tour.booking.currency': 'USD',
-      'tour.booking.perPerson': 'por persona',
-      'tour.booking.helper': 'Los precios bajan conforme agregas más personas.',
-      'tour.booking.guestsLabel': '¿Cuántas personas?',
-      'tour.booking.nameLabel': 'Nombre',
-      'tour.booking.namePlaceholder': 'Tu nombre completo',
-      'tour.booking.emailLabel': 'Correo electrónico',
-      'tour.booking.emailPlaceholder': 'tu@correo.com',
-      'tour.booking.phoneLabel': 'Número de teléfono',
+      'tour.booking.perPerson': 'par personne',
+      'tour.booking.helper': 'Les prix baissent lorsque vous ajoutez plus de personnes.',
+      'tour.booking.guestsLabel': 'Combien de personnes?',
+      'tour.booking.nameLabel': 'Nom',
+      'tour.booking.namePlaceholder': 'Votre nom complet',
+      'tour.booking.emailLabel': 'Courriel',
+      'tour.booking.emailPlaceholder': 'vous@exemple.com',
+      'tour.booking.phoneLabel': 'Numéro de téléphone',
       'tour.booking.phonePlaceholder': '+52 984 167 0697',
-      'tour.booking.datetimeLabel': 'Fecha y hora de la actividad',
-      'tour.booking.datetimeUnknown': 'Aún no lo sé',
-      'tour.booking.pickupLabel': 'Lugar de pick-up',
-      'tour.booking.pickupPlaceholder': 'Hotel o punto de encuentro',
-      'tour.booking.submit': 'Reservar ahora',
-      'tour.booking.note': 'No se realiza ningún pago aquí: confirmamos disponibilidad y te damos seguimiento de inmediato.',
-      'tour.booking.disclaimer': 'Los precios y promociones pueden cambiar sin previo aviso.',
+      'tour.booking.datetimeLabel': 'Date et heure de l’activité',
+      'tour.booking.datetimeUnknown': 'Je ne sais pas encore',
+      'tour.booking.pickupLabel': 'Lieu de prise en charge',
+      'tour.booking.pickupPlaceholder': 'Hôtel ou point de rencontre',
+      'tour.booking.submit': 'Réserver maintenant',
+      'tour.booking.note':
+        'Aucun paiement n’est perçu ici : nous confirmons la disponibilité et vous répondons rapidement.',
+      'tour.booking.disclaimer': 'Les prix et promotions peuvent changer sans préavis.',
       'tour.booking.status.hold':
-        'Reservando {{guests}} lugar(es) para {{tour}}. Confirmaremos el pick-up en {{pickup}} de inmediato.',
+        'Nous bloquons {{guests}} place(s) pour {{tour}}. Nous confirmerons la prise en charge à {{pickup}} sans délai.',
       'tour.booking.status.missingService':
-        'Conecta el formulario de reserva con tu servicio de correo para recibir solicitudes.',
-      'tour.booking.status.sent': '¡Solicitud enviada! Confirmaremos disponibilidad y te daremos seguimiento de inmediato.',
-      'tour.booking.status.error': 'Ocurrió un error al enviar tu solicitud. Inténtalo de nuevo en unos minutos.',
-      'tour.booking.status.unavailable': 'No pudimos enviar tu solicitud en este momento. Inténtalo de nuevo más tarde.',
-      'tour.booking.pickupFallback': 'tu ubicación',
-      'tour.booking.datetimeFallback': 'No proporcionado',
-      'tour.related.aria': 'Otras aventuras',
-      'tour.related.heading': 'Sigue explorando',
-      'tour.related.copy': 'A otros viajeros también les encantaron estos recorridos.',
-      'tour.related.previous': 'Tours anteriores',
-      'tour.related.next': 'Siguientes tours'
+        'Veuillez connecter le formulaire de réservation à votre service de courriel pour recevoir les demandes.',
+      'tour.booking.status.sent': 'Demande envoyée! Nous confirmerons la disponibilité et vous répondons rapidement.',
+      'tour.booking.status.error': 'Une erreur est survenue lors de l’envoi. Veuillez réessayer dans quelques minutes.',
+      'tour.booking.status.unavailable':
+        'Impossible d’envoyer votre demande pour le moment. Veuillez réessayer plus tard.',
+      'tour.booking.pickupFallback': 'votre lieu',
+      'tour.booking.datetimeFallback': 'Non fourni',
+      'tour.related.aria': 'Autres aventures',
+      'tour.related.heading': 'Continuez à explorer',
+      'tour.related.copy': 'D’autres voyageurs ont aussi adoré ces excursions.',
+      'tour.related.previous': 'Excursions précédentes',
+      'tour.related.next': 'Excursions suivantes'
     }
   }
 };
 
-const SUPPORTED_LANGUAGES = ['en', 'es'];
-const DEFAULT_LANGUAGE = 'en';
+const SUPPORTED_LANGUAGES = ['fr'];
+const DEFAULT_LANGUAGE = 'fr';
 
 function getTourContent(tour, lang = DEFAULT_LANGUAGE) {
   const translation = tour.translations?.[lang] || {};
@@ -691,12 +365,12 @@ function getTourContent(tour, lang = DEFAULT_LANGUAGE) {
 const adventureTours = [
   {
     slug: 'turtles-cenotes',
-    name: 'Turtles + Cenotes',
-    duration: 'Half a day • Ocean + Jungle',
-    tagline: '· Sea Turtles<br>· 3 Cenotes<br>· Snack & Drinks',
+    name: 'Tortues + Cenotes',
+    duration: 'Demi-journée • Océan + jungle',
+    tagline: '· Tortues marines<br>· 3 cenotes<br>· Collation et boissons',
     description:
-      'Spend a dreamy morning in the water, starting with gentle sea turtle snorkeling and ending in three crystal-clear cenotes hidden in the jungle. Every stop feels like a postcard, with time to float, breathe, and soak it all in. It is a simple, feel-good adventure that still feels big and unforgettable.',
-    includes: ['🐢 Swim with sea turtles', '🤿 Snorkel in 3 cenotes', '🥤 Snack & drinks'],
+      'Passez une matinée de rêve dans l’eau, en commençant par un snorkel doux avec les tortues de mer et en terminant dans trois cenotes cristallins cachés dans la jungle. Chaque arrêt ressemble à une carte postale, avec du temps pour flotter, respirer et profiter. Une aventure simple et mémorable qui reste grandiose et inoubliable.',
+    includes: ['🐢 Nager avec les tortues marines', '🤿 Snorkel dans 3 cenotes', '🥤 Collation et boissons'],
     image:
       'https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?_gl=1*1leu1xd*_ga*NTc3NjYyMTQzLjE3NjU4MTE2NzU.*_ga_8JE65Q40S6*czE3NjU5MDM2NjEkbzMkZzEkdDE3NjU5MDM2ODckajM0JGwwJGgw',
     gallery: [
@@ -718,27 +392,16 @@ const adventureTours = [
       11: 119,
       12: 119
     },
-    translations: {
-      es: {
-        name: 'Tortugas + Cenotes',
-        duration: 'Medio día • Océano + selva',
-        tagline: '· Tortugas marinas<br>· 3 cenotes<br>· Snack y bebidas',
-        description:
-          'Vive una mañana de agua y calma: comienza con snorkel junto a tortugas marinas y termina en tres cenotes cristalinos escondidos en la selva. Cada parada se siente como postal, con tiempo para flotar, respirar y disfrutar. Una aventura simple y memorable que se queda contigo.',
-        includes: ['🐢 Nado con tortugas marinas', '🤿 Snorkel en 3 cenotes', '🥤 Snack y bebidas'],
-        badge: 'Favorito'
-      }
-    },
-    badge: 'Top pick'
+    badge: 'Coup de cœur'
   },
   {
     slug: 'tulum-turtles-cenotes',
-    name: 'Tulum Underwater',
-    duration: 'Full day • Culture + Water',
-    tagline: '·Tulum Ruins<br>·Turtle Snorkeling<br>·2 Cenotes<br>·Full Local Lunch',
+    name: 'Tulum sous l’eau',
+    duration: 'Journée complète • Culture + eau',
+    tagline: '· Ruines de Tulum<br>· Snorkel avec tortues<br>· 2 cenotes<br>· Dîner local complet',
     description:
-      'Walk the stunning cliffs of Tulum with a friendly guide, then slip into the water to snorkel with turtles before cooling off in two beautiful cenotes. The day flows smoothly with plenty of photo stops, easy pacing, and a full local lunch that tastes like the Yucatán. It is the kind of excursion that feels both magical and effortless.',
-    includes: ['🏛️ Tulum ruins tour', '🐢 Turtle snorkeling', '🌊 Swim in 2 cenotes', '🌮 Full local lunch'],
+      'Parcourez les falaises de Tulum avec un guide chaleureux, puis plongez pour faire du snorkel avec les tortues avant de vous rafraîchir dans deux superbes cenotes. La journée se déroule en douceur avec des arrêts photo, un rythme facile et un dîner local complet aux saveurs du Yucatán. Une excursion à la fois magique et simple.',
+    includes: ['🏛️ Visite des ruines de Tulum', '🐢 Snorkel avec les tortues', '🌊 Nage dans 2 cenotes', '🌮 Dîner local complet'],
     image:
       'https://images.pexels.com/photos/5992273/pexels-photo-5992273.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: [
@@ -759,27 +422,16 @@ const adventureTours = [
       11: 169,
       12: 169
     },
-    translations: {
-      es: {
-        name: 'Tulum Bajo el Agua',
-        duration: 'Día completo • Cultura + agua',
-        tagline: '· Ruinas de Tulum<br>· Snorkel con tortugas<br>· 2 cenotes<br>· Almuerzo local completo',
-        description:
-          'Recorre los impresionantes acantilados de Tulum con un guía cercano, luego sumérgete para hacer snorkel con tortugas y refrescarte en dos cenotes. El día fluye con paradas para fotos, ritmo relajado y un almuerzo local completo con sabor a Yucatán. Una excursión mágica y sin complicaciones.',
-        includes: ['🏛️ Tour por ruinas de Tulum', '🐢 Snorkel con tortugas', '🌊 Nado en 2 cenotes', '🌮 Almuerzo local completo'],
-        badge: 'Más vendido'
-      }
-    },
-    badge: 'Best seller'
+    badge: 'Meilleure vente'
   },
   {
     slug: 'cenotes-express',
     name: 'Cenotes Express',
-    duration: 'Half a day • Cenote circuit',
-    tagline: '· 4 Cenotes<br>· Rappel down a cavern<br>· Snack & Beers',
+    duration: 'Demi-journée • Circuit de cenotes',
+    tagline: '· 4 cenotes<br>· Descente en rappel dans une caverne<br>· Collation et bières',
     description:
-      'Dive into four different cenotes, each one more gorgeous than the last, then rappel into a cavern chamber for a true wow moment. Between swims you will have time to recharge with a snack and a cold drink, so the day feels smooth and exciting. It is a compact adventure packed with amazing water moments.',
-    includes: ['🌊 Visit 4 cenotes', '🧗 Rappel down a cavern', '🍺 Snack & beers'],
+      'Plongez dans quatre cenotes différents, chacun plus beau que le précédent, puis descendez en rappel dans une caverne pour un vrai moment wow. Entre les baignades, vous aurez le temps de reprendre des forces avec une collation et une boisson froide. Une aventure compacte remplie de moments aquatiques.',
+    includes: ['🌊 Visite de 4 cenotes', '🧗 Descente en rappel dans une caverne', '🍺 Collation et bières'],
     image:
       'https://images.pexels.com/photos/2410870/pexels-photo-2410870.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: ['https://images.pexels.com/photos/2410870/pexels-photo-2410870.jpeg?auto=format&fit=crop&w=1200&q=70'],
@@ -797,27 +449,16 @@ const adventureTours = [
       11: 74,
       12: 74
     },
-    translations: {
-      es: {
-        name: 'Cenotes Express',
-        duration: 'Medio día • Circuito de cenotes',
-        tagline: '· 4 cenotes<br>· Rappel en caverna<br>· Snack y cervezas',
-        description:
-          'Sumérgete en cuatro cenotes distintos, cada uno más impresionante que el anterior, y termina con un rappel a una caverna para el momento wow. Entre nados, tendrás tiempo para recargar con un snack y una bebida fría. Una aventura compacta con momentos acuáticos inolvidables.',
-        includes: ['🌊 Visita 4 cenotes', '🧗 Rappel en caverna', '🍺 Snack y cervezas'],
-        badge: 'Nueva ruta'
-      }
-    },
-    badge: 'New route'
+    badge: 'Nouvel itinéraire'
   },
   {
     slug: 'tulum-express',
     name: 'Tulum Express',
-    duration: 'Half a day • Culture dip',
-    tagline: '· Tulum Ruins<br>· Drinks & Beers<br>· (Optional) Free time in Tulum',
+    duration: 'Demi-journée • Touche culturelle',
+    tagline: '· Ruines de Tulum<br>· Boissons et bières<br>· (Optionnel) Temps libre à Tulum',
     description:
-      'Explore the Tulum ruins with a certified guide who keeps the story easy to follow and fun to hear. You will have time for those iconic ocean views, great photos, and a relaxed walk through history. After the visit, enjoy optional free time for shopping, coffee, or a quick snack to round out a perfect half-day escape.',
-    includes: ['🏛️ Tulum ruins entry', '🍹 Drinks & beers', '🛍️ Optional free time in Tulum'],
+      'Explorez les ruines de Tulum avec un guide certifié qui rend l’histoire claire et agréable. Vous aurez le temps pour les vues iconiques, de belles photos et une marche relax. Après la visite, profitez d’un temps libre optionnel pour magasiner, prendre un café ou une collation.',
+    includes: ['🏛️ Entrée des ruines de Tulum', '🍹 Boissons et bières', '🛍️ Temps libre optionnel à Tulum'],
     image:
       'https://images.pexels.com/photos/13713189/pexels-photo-13713189.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: ['https://images.pexels.com/photos/13713189/pexels-photo-13713189.jpeg?auto=format&fit=crop&w=1200&q=70'],
@@ -835,27 +476,16 @@ const adventureTours = [
       11: 69,
       12: 69
     },
-    translations: {
-      es: {
-        name: 'Tulum Express',
-        duration: 'Medio día • Toque cultural',
-        tagline: '· Ruinas de Tulum<br>· Bebidas y cervezas<br>· (Opcional) Tiempo libre en Tulum',
-        description:
-          'Explora las ruinas de Tulum con un guía certificado que explica todo de forma clara y entretenida. Tendrás tiempo para las vistas al mar, buenas fotos y un paseo relajado por la historia. Después, disfruta tiempo libre opcional para compras, café o un snack rápido.',
-        includes: ['🏛️ Entrada a ruinas de Tulum', '🍹 Bebidas y cervezas', '🛍️ Tiempo libre en Tulum (opcional)'],
-        badge: 'Escapada rápida'
-      }
-    },
-    badge: 'Quick escape'
+    badge: 'Escapade rapide'
   },
   {
     slug: 'tacos-tour',
-    name: 'Tacos Tour',
-    duration: 'Evening • Flavor trail',
-    tagline: '· Autentic Tacos<br>· Beers, Tequila & Mezcal<br>· Free time in Playa del Carmen',
+    name: 'Tournée tacos',
+    duration: 'Soirée • Parcours gourmand',
+    tagline: '· Tacos authentiques<br>· Bières, tequila et mezcal<br>· Temps libre à Playa del Carmen',
     description:
-      'Taste authentic tacos at beloved local spots, sip tequila or mezcal, and enjoy a lively night in Playa del Carmen with zero rush. Every stop is easy, flavorful, and full of local charm, with plenty of time to laugh and explore. It is a delicious evening that feels like the best kind of celebration.',
-    includes: ['🌮 Authentic tacos', '🥃 Beers, tequila & mezcal', '🌆 Free time in Playa del Carmen'],
+      'Goûtez des tacos authentiques dans des adresses locales, dégustez tequila ou mezcal et profitez d’une soirée animée à Playa del Carmen sans se presser. Chaque arrêt est simple, savoureux et plein de charme local. Une soirée délicieuse qui ressemble à une célébration.',
+    includes: ['🌮 Tacos authentiques', '🥃 Bières, tequila et mezcal', '🌆 Temps libre à Playa del Carmen'],
     image:
       'https://images.pexels.com/photos/4958641/pexels-photo-4958641.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: ['https://images.pexels.com/photos/4958641/pexels-photo-4958641.jpeg?auto=format&fit=crop&w=1200&q=70'],
@@ -873,27 +503,16 @@ const adventureTours = [
       11: 59,
       12: 59
     },
-    translations: {
-      es: {
-        name: 'Tour de Tacos',
-        duration: 'Noche • Ruta de sabor',
-        tagline: '· Tacos auténticos<br>· Cervezas, tequila y mezcal<br>· Tiempo libre en Playa del Carmen',
-        description:
-          'Prueba tacos auténticos en lugares locales, acompaña con tequila o mezcal y disfruta una noche animada en Playa del Carmen sin prisas. Cada parada es fácil, sabrosa y con mucho encanto local, con tiempo para reír y explorar. Una noche deliciosa que se siente como celebración.',
-        includes: ['🌮 Tacos auténticos', '🥃 Cervezas, tequila y mezcal', '🌆 Tiempo libre en Playa del Carmen'],
-        badge: 'Favorito foodie'
-      }
-    },
-    badge: 'Foodie fave'
+    badge: 'Favori gourmand'
   },
   {
     slug: 'tulum-coba',
-    name: 'Tulum + Coba',
-    duration: 'Full day • Ruins + Cenote',
-    tagline: '·Tulum Ruins<br>·Coba Ruins<br>·Cenote with Zipline<br>·Local Buffet & Drinks',
+    name: 'Tulum + Cobá',
+    duration: 'Journée complète • Ruines + cenote',
+    tagline: '· Ruines de Tulum<br>· Ruines de Cobá<br>· Cenote avec tyrolienne<br>· Buffet local et boissons',
     description:
-      'Spend a full day visiting the Tulum and Coba ruins with guides who keep everything simple, clear, and engaging. You will cool off in a cenote with a zipline for extra thrills, then wrap up with a satisfying local buffet and drinks. It is an all-in-one excursion that feels epic yet easy.',
-    includes: ['🏛️ Tulum ruins', '🌿 Coba ruins', '🪂 Cenote with zipline', '🥘 Local buffet & drinks'],
+      'Passez une journée complète à visiter les ruines de Tulum et de Cobá avec des guides qui expliquent tout simplement et clairement. Rafraîchissez-vous dans un cenote avec tyrolienne, puis terminez avec un buffet local et des boissons. Une excursion complète qui reste fluide.',
+    includes: ['🏛️ Ruines de Tulum', '🌿 Ruines de Cobá', '🪂 Cenote avec tyrolienne', '🥘 Buffet local et boissons'],
     image:
       'https://images.pexels.com/photos/17179205/pexels-photo-17179205.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: ['https://images.pexels.com/photos/17179205/pexels-photo-17179205.jpeg?auto=format&fit=crop&w=1200&q=70'],
@@ -911,27 +530,16 @@ const adventureTours = [
       11: 179,
       12: 179
     },
-    translations: {
-      es: {
-        name: 'Tulum + Cobá',
-        duration: 'Día completo • Ruinas + cenote',
-        tagline: '· Ruinas de Tulum<br>· Ruinas de Cobá<br>· Cenote con tirolesa<br>· Buffet local y bebidas',
-        description:
-          'Vive un día completo entre las ruinas de Tulum y Cobá con guías que explican todo de forma clara y amena. Refresca en un cenote con tirolesa para un extra de adrenalina, y cierra con un buffet local y bebidas. Una excursión épica y sin complicaciones.',
-        includes: ['🏛️ Ruinas de Tulum', '🌿 Ruinas de Cobá', '🪂 Cenote con tirolesa', '🥘 Buffet local y bebidas'],
-        badge: 'Aventura de día completo'
-      }
-    },
-    badge: 'All-day adventure'
+    badge: 'Aventure d’une journée'
   },
   {
     slug: 'coba',
-    name: 'Coba',
-    duration: 'Full day • Jungle history',
-    tagline: '·Coba Ruins<br>·Bike around the site<br>·Cenote with Zipline<br>·Regional Buffet & Drinks',
+    name: 'Cobá',
+    duration: 'Journée complète • Histoire dans la jungle',
+    tagline: '· Ruines de Cobá<br>· Tour à vélo sur le site<br>· Cenote avec tyrolienne<br>· Buffet régional et boissons',
     description:
-      'Bike through the jungle ruins of Coba with a guide who brings the history to life in simple, fun ways. After exploring, you will cool off in a cenote with a zipline and enjoy a regional buffet with drinks. It is a big, beautiful day that still feels relaxed and approachable.',
-    includes: ['🌿 Coba ruins', '🚲 Bike around the site', '🪂 Cenote with zipline', '🥘 Regional buffet & drinks'],
+      'Parcourez à vélo les ruines de Cobá dans la jungle avec un guide qui fait revivre l’histoire de façon simple et captivante. Ensuite, rafraîchissez-vous dans un cenote avec tyrolienne et profitez d’un buffet régional avec boissons. Une grande journée qui reste relax.',
+    includes: ['🌿 Ruines de Cobá', '🚲 Tour à vélo sur le site', '🪂 Cenote avec tyrolienne', '🥘 Buffet régional et boissons'],
     image:
       'https://images.pexels.com/photos/14902028/pexels-photo-14902028.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: ['https://images.pexels.com/photos/14902028/pexels-photo-14902028.jpeg?auto=format&fit=crop&w=1200&q=70'],
@@ -949,27 +557,16 @@ const adventureTours = [
       11: 124,
       12: 124
     },
-    translations: {
-      es: {
-        name: 'Cobá',
-        duration: 'Día completo • Historia en la selva',
-        tagline: '· Ruinas de Cobá<br>· Recorrido en bici<br>· Cenote con tirolesa<br>· Buffet regional y bebidas',
-        description:
-          'Recorre en bici las ruinas selváticas de Cobá con un guía que cuenta la historia de forma clara y entretenida. Después, refréscate en un cenote con tirolesa y disfruta un buffet regional con bebidas. Un día grande y hermoso que se siente relajado y accesible.',
-        includes: ['🌿 Ruinas de Cobá', '🚲 Recorrido en bici', '🪂 Cenote con tirolesa', '🥘 Buffet regional y bebidas'],
-        badge: 'Historia viva'
-      }
-    },
-    badge: 'History rich'
+    badge: 'Histoire vivante'
   },
   {
     slug: 'chichen-itza',
-    name: 'Chichen Itza',
-    duration: 'Full day • Wonder of the World',
-    tagline: '· Chichen Itza ruins<br>· Cenote with zipline<br>· Local Buffet with Drinks',
+    name: 'Chichén Itzá',
+    duration: 'Journée complète • Merveille du monde',
+    tagline: '· Ruines de Chichén Itzá<br>· Cenote avec tyrolienne<br>· Buffet local avec boissons',
     description:
-      'See Chichen Itza with a knowledgeable guide who shares the stories behind the temples in an easy, memorable way. Then take a refreshing swim in a cenote with a zipline before enjoying a regional buffet with drinks. It is a world-class excursion that feels smooth, exciting, and totally worth it.',
-    includes: ['🗿 Chichen Itza ruins', '🪂 Cenote with zipline', '🥘 Local buffet with drinks'],
+      'Découvrez Chichén Itzá avec un guide passionné qui partage les histoires des temples de façon claire et mémorable. Puis nagez dans un cenote avec tyrolienne avant un buffet régional avec boissons. Une excursion de classe mondiale, fluide et exaltante.',
+    includes: ['🗿 Ruines de Chichén Itzá', '🪂 Cenote avec tyrolienne', '🥘 Buffet local avec boissons'],
     image:
       'https://images.pexels.com/photos/3290068/pexels-photo-3290068.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: ['https://images.pexels.com/photos/3290068/pexels-photo-3290068.jpeg?auto=format&fit=crop&w=1200&q=70'],
@@ -986,27 +583,16 @@ const adventureTours = [
       11: 184,
       12: 184
     },
-    translations: {
-      es: {
-        name: 'Chichén Itzá',
-        duration: 'Día completo • Maravilla del mundo',
-        tagline: '· Ruinas de Chichén Itzá<br>· Cenote con tirolesa<br>· Buffet local con bebidas',
-        description:
-          'Visita Chichén Itzá con un guía experto que comparte las historias detrás de los templos de forma clara y memorable. Después, refréscate en un cenote con tirolesa y disfruta un buffet regional con bebidas. Una excursión de clase mundial, emocionante y totalmente vale la pena.',
-        includes: ['🗿 Ruinas de Chichén Itzá', '🪂 Cenote con tirolesa', '🥘 Buffet local con bebidas'],
-        badge: 'Sitio UNESCO'
-      }
-    },
-    badge: 'UNESCO site'
+    badge: 'Site UNESCO'
   },
   {
     slug: 'coba-chichen-itza',
-    name: 'Coba + Chichen Itza',
-    duration: 'Full day • Two Wonders',
-    tagline: '· Coba Ruins<br>· Chichen Itza ruins<br>· Cenote with zipline<br>· Local Buffet with Drinks',
+    name: 'Cobá + Chichén Itzá',
+    duration: 'Journée complète • Deux merveilles',
+    tagline: '· Ruines de Cobá<br>· Ruines de Chichén Itzá<br>· Cenote avec tyrolienne<br>· Buffet local avec boissons',
     description:
-      'Visit Coba deep in the jungle and Chichen Itza on the open plain in one incredible, well-paced day. Break up the adventure with a cenote zipline and a regional buffet with drinks that keeps everyone happy. It is a once-in-a-lifetime tour that feels effortless and fun.',
-    includes: ['🌿 Coba ruins', '🗿 Chichen Itza ruins', '🪂 Cenote with zipline', '🥘 Local buffet with drinks'],
+      'Visitez Cobá au cœur de la jungle et Chichén Itzá sur la plaine en une seule journée bien rythmée. Coupez l’aventure avec une tyrolienne en cenote et un buffet régional avec boissons. Une excursion unique, facile et amusante.',
+    includes: ['🌿 Ruines de Cobá', '🗿 Ruines de Chichén Itzá', '🪂 Cenote avec tyrolienne', '🥘 Buffet local avec boissons'],
     image:
       'https://images.pexels.com/photos/31657162/pexels-photo-31657162.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: ['https://images.pexels.com/photos/31657162/pexels-photo-31657162.jpeg?auto=format&fit=crop&w=1200&q=70'],
@@ -1023,27 +609,17 @@ const adventureTours = [
       11: 219,
       12: 219
     },
-    translations: {
-      es: {
-        name: 'Cobá + Chichén Itzá',
-        duration: 'Día completo • Dos maravillas',
-        tagline: '· Ruinas de Cobá<br>· Ruinas de Chichén Itzá<br>· Cenote con tirolesa<br>· Buffet local con bebidas',
-        description:
-          'Visita Cobá en plena selva y Chichén Itzá en la llanura abierta en un día increíble y bien organizado. Divide la aventura con una tirolesa en cenote y un buffet regional con bebidas que mantiene a todos felices. Un tour único en la vida, fácil y divertido.',
-        includes: ['🌿 Ruinas de Cobá', '🗿 Ruinas de Chichén Itzá', '🪂 Cenote con tirolesa', '🥘 Buffet local con bebidas'],
-        badge: 'Circuito épico'
-      }
-    },
-    badge: 'Epic circuit'
+    badge: 'Circuit épique'
   },
   {
     slug: 'holbox-express',
     name: 'Holbox Express',
-    duration: 'Full day • Island hopping',
-    tagline: '· Private SpeedBoat<br>· 3 Islands Hoping<br>· Golf Cart<br>· Free time on the island<br>· BeachClub Buffet with open bar',
+    duration: 'Journée complète • Saut d’îles',
+    tagline:
+      '· Bateau rapide privé<br>· Saut entre 3 îles<br>· Car de golf<br>· Temps libre sur l’île<br>· Buffet de beach club avec bar ouvert',
     description:
-      'Ride a private speedboat to hop between dreamy Holbox islands, relax on bright white sandbars, and enjoy time to explore at your own pace. The water is stunning, the vibe is laid-back, and the day feels like a tropical movie. A beach club buffet with open bar keeps everything easy and celebratory.',
-    includes: ['🚤 Private speedboat', '🏝️ 3-island hopping', '🛺 Golf cart', '🏖️ Free time on the island', '🍹 Beach club buffet with open bar'],
+      'Montez à bord d’un bateau rapide privé pour sauter entre les îles de Holbox, relaxer sur des bancs de sable blancs et explorer à votre rythme. L’eau est superbe, l’ambiance décontractée et la journée ressemble à un film tropical. Un buffet de beach club avec bar ouvert garde le tout festif et simple.',
+    includes: ['🚤 Bateau rapide privé', '🏝️ Saut entre 3 îles', '🛺 Car de golf', '🏖️ Temps libre sur l’île', '🍹 Buffet de beach club avec bar ouvert'],
     image:
       'https://images.pexels.com/photos/11481626/pexels-photo-11481626.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: ['https://images.pexels.com/photos/11481626/pexels-photo-11481626.jpeg?auto=format&fit=crop&w=1200&q=70'],
@@ -1061,28 +637,17 @@ const adventureTours = [
       11: 141,
       12: 141
     },
-    translations: {
-      es: {
-        name: 'Holbox Express',
-        duration: 'Día completo • Paseo por islas',
-        tagline:
-          '· Lancha rápida privada<br>· Tour por 3 islas<br>· Carrito de golf<br>· Tiempo libre en la isla<br>· Buffet en beach club con barra libre',
-        description:
-          'Navega en lancha privada para recorrer las islas de Holbox, relájate en bancos de arena blanca y explora a tu ritmo. El agua es increíble, el ambiente es relajado y el día se siente de película tropical. Un buffet en beach club con barra libre lo hace todo fácil y festivo.',
-        includes: ['🚤 Lancha rápida privada', '🏝️ Tour por 3 islas', '🛺 Carrito de golf', '🏖️ Tiempo libre en la isla', '🍹 Buffet en beach club con barra libre'],
-        badge: 'Vida isleña'
-      }
-    },
-    badge: 'Island life'
+    badge: 'Vie insulaire'
   },
   {
     slug: 'dolphin-turtle',
-    name: 'Dolphin + Turtle',
-    duration: 'Full day • UNESCO Biosphere',
-    tagline: '· Sian Kaan by Speedboat<br>· Dolphin + Turtles<br>· Bird watching<br>· Reef Snorkeling<br>· Local Buffet',
+    name: 'Dauphins + Tortues',
+    duration: 'Journée complète • Réserve UNESCO',
+    tagline:
+      '· Sian Ka’an en bateau rapide<br>· Dauphins + tortues<br>· Observation d’oiseaux<br>· Snorkel sur récif<br>· Buffet local',
     description:
-      'Cruise through the Sian Ka’an reserve by speedboat to look for dolphins, turtles, and colorful reef life in a protected paradise. Slow down for peaceful bird watching, then snorkel the reef before ending with a beachside buffet. It is a breathtaking excursion that blends wildlife, water, and pure relaxation.',
-    includes: ['🚤 Sian Ka’an by speedboat', '🐬 Dolphins & turtles', '🦜 Bird watching', '🤿 Reef snorkeling', '🍽️ Local buffet'],
+      'Parcourez la réserve de Sian Ka’an en bateau rapide pour chercher dauphins, tortues et vie récifale dans un paradis protégé. Ralentissez pour l’observation d’oiseaux, puis faites du snorkel avant de terminer par un buffet en bord de mer. Une excursion époustouflante qui mélange faune, eau et détente.',
+    includes: ['🚤 Sian Ka’an en bateau rapide', '🐬 Dauphins et tortues', '🦜 Observation d’oiseaux', '🤿 Snorkel sur récif', '🍽️ Buffet local'],
     image:
       'https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: ['https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg?auto=format&fit=crop&w=1200&q=70'],
@@ -1100,28 +665,16 @@ const adventureTours = [
       11: 155,
       12: 155
     },
-    translations: {
-      es: {
-        name: 'Delfines + Tortugas',
-        duration: 'Día completo • Reserva UNESCO',
-        tagline:
-          '· Sian Ka’an en lancha rápida<br>· Delfines + tortugas<br>· Avistamiento de aves<br>· Snorkel en arrecife<br>· Buffet local',
-        description:
-          'Recorre la reserva de Sian Ka’an en lancha rápida para buscar delfines, tortugas y vida arrecifal en un paraíso protegido. Baja el ritmo con avistamiento de aves, luego haz snorkel en el arrecife y termina con un buffet a la orilla del mar. Una excursión increíble que mezcla fauna, agua y descanso.',
-        includes: ['🚤 Sian Ka’an en lancha rápida', '🐬 Delfines y tortugas', '🦜 Avistamiento de aves', '🤿 Snorkel en arrecife', '🍽️ Buffet local'],
-        badge: 'Reserva UNESCO'
-      }
-    },
-    badge: 'UNESCO reserve'
+    badge: 'Réserve UNESCO'
   },
   {
     slug: 'fishing-half-day',
-    name: 'Fishing Half Day',
-    duration: 'Half a day • Private charter',
-    tagline: '· Private Boat<br>· Fishing Equipment<br>· Fresh Ceviche and fish<br>· Drinks and Beers',
+    name: 'Pêche demi-journée',
+    duration: 'Demi-journée • Bateau privé',
+    tagline: '· Bateau privé<br>· Équipement de pêche<br>· Ceviche et poisson frais<br>· Boissons et bières',
     description:
-      'Enjoy a private fishing charter with pro guides, calm waters, and an easy pace along the coast. You will reel in the catch, then savor fresh ceviche, fish, and cold drinks right on board. It is a simple, amazing way to spend half a day on the Caribbean.',
-    includes: ['🛥️ Private boat', '🎣 Fishing equipment', '🐟 Fresh ceviche & fish', '🍺 Drinks and beers'],
+      'Profitez d’une sortie de pêche privée avec des guides pros, des eaux calmes et un rythme facile le long de la côte. Ramenez votre prise, puis savourez ceviche frais, poisson et boissons froides à bord. Une façon simple et incroyable de passer une demi-journée dans les Caraïbes.',
+    includes: ['🛥️ Bateau privé', '🎣 Équipement de pêche', '🐟 Ceviche frais et poisson', '🍺 Boissons et bières'],
     image:
       'https://images.pexels.com/photos/3793366/pexels-photo-3793366.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: [
@@ -1142,20 +695,10 @@ const adventureTours = [
       11: 0,
       12: 0
     },
-    translations: {
-      es: {
-        name: 'Pesca medio día',
-        duration: 'Medio día • Charter privado',
-        tagline: '· Lancha privada<br>· Equipo de pesca<br>· Ceviche y pescado fresco<br>· Bebidas y cervezas',
-        description:
-          'Disfruta un charter privado de pesca con guías profesionales, aguas tranquilas y un ritmo relajado en la costa. Atrapa tu pesca y saborea ceviche fresco, pescado y bebidas frías a bordo. Una manera simple y espectacular de vivir medio día en el Caribe.',
-        includes: ['🛥️ Lancha privada', '🎣 Equipo de pesca', '🐟 Ceviche y pescado fresco', '🍺 Bebidas y cervezas'],
-        badge: 'Lancha privada'
-      }
-    },
-    badge: 'Private boat'
+    badge: 'Bateau privé'
   }
 ];
+
 
 const currencyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -1177,7 +720,7 @@ function createLanguageManager(pageKey) {
     ? storedLanguage
     : SUPPORTED_LANGUAGES.includes(documentLanguage)
     ? documentLanguage
-    : 'en';
+    : DEFAULT_LANGUAGE;
   const listeners = new Set();
 
   function getTranslationValue(lang, key) {
@@ -1384,20 +927,9 @@ function setupLanguageToggle(languageManager) {
   const toggle = document.querySelector('[data-language-toggle]');
   if (!toggle) return;
 
-  const updateToggle = (lang) => {
-    const isSpanish = lang === 'es';
-    const nextLanguage = isSpanish ? 'en' : 'es';
-    toggle.textContent = nextLanguage === 'es' ? 'Español 🇲🇽' : 'English 🇺🇸';
-    toggle.setAttribute('aria-pressed', isSpanish ? 'true' : 'false');
-    scheduleNavControlWidthSync();
-  };
-
-  toggle.addEventListener('click', () => {
-    const nextLanguage = languageManager.getLanguage() === 'en' ? 'es' : 'en';
-    languageManager.setLanguage(nextLanguage);
-  });
-
-  languageManager.onChange(updateToggle);
+  toggle.textContent = 'Français';
+  toggle.setAttribute('aria-pressed', 'true');
+  scheduleNavControlWidthSync();
 }
 
 function setupThemeToggle(prefersDark, languageManager) {
@@ -2051,7 +1583,7 @@ function initTourPage(tours, languageManager) {
     if (durationEl) durationEl.textContent = content.duration;
     if (taglineEl) taglineEl.innerHTML = content.tagline;
     if (descriptionEl) descriptionEl.textContent = content.description;
-    document.title = `${content.name} | Beyond the Reef Mexico`;
+    document.title = `${content.name} | Québec Mexique`;
 
     if (includesEl) {
       includesEl.innerHTML = '';
@@ -2070,7 +1602,7 @@ function initTourPage(tours, languageManager) {
         images.forEach((src, index) => {
           const slide = document.createElement('figure');
           slide.className = 'tour-gallery__slide';
-          slide.innerHTML = `<img src="${src}" alt="${content.name} photo ${index + 1}" loading="lazy" decoding="async" />`;
+          slide.innerHTML = `<img src="${src}" alt="Photo ${index + 1} de ${content.name}" loading="lazy" decoding="async" />`;
           galleryTrack.appendChild(slide);
         });
       } else {
