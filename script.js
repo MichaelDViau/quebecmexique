@@ -403,8 +403,7 @@ const adventureTours = [
     image:
       'https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: [
-      'https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=format&fit=crop&w=1200&q=70',
-      'https://images.pexels.com/photos/32865198/pexels-photo-32865198.jpeg?auto=format&fit=crop&w=1200&q=70'
+      'assets/TurtlePromo/AkumalPromo01.mov'
     ],
     prices: {
       1: 89,
@@ -1565,9 +1564,12 @@ function initTourPage(tours, languageManager) {
       if (!galleryTrack.children.length) {
         galleryTrack.innerHTML = '';
         images.forEach((src, index) => {
+          const isVideo = /\.(mov|mp4|webm)(\?.*)?$/i.test(src);
           const slide = document.createElement('figure');
           slide.className = 'tour-gallery__slide';
-          slide.innerHTML = `<img src="${src}" alt="Photo ${index + 1} de ${content.name}" loading="lazy" decoding="async" />`;
+          slide.innerHTML = isVideo
+            ? `<video src="${src}" autoplay muted loop playsinline preload="metadata"></video>`
+            : `<img src="${src}" alt="Photo ${index + 1} de ${content.name}" loading="lazy" decoding="async" />`;
           galleryTrack.appendChild(slide);
         });
       } else {
