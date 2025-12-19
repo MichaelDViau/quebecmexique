@@ -393,6 +393,36 @@ const adventureTours = [
     badge: 'Coup de cœur'
   },
   {
+    slug: 'promo-mercredi',
+    name: 'Promo mercredi : Tortues + Cenote',
+    duration: 'Demi-journée • Spécial mercredi',
+    tagline: '· Tortues marines<br>· Cenote cristallin<br>· Collation fraîche',
+    description:
+      'Profitez de notre offre spéciale du mercredi pour nager avec les tortues puis vous rafraîchir dans un cenote lumineux. C’est le combo parfait pour une matinée douce, simple et pleine de magie bleue. Places limitées chaque mercredi.',
+    includes: ['🐢 Snorkel avec les tortues', '🌊 Nage dans un cenote', '🥤 Collation et boissons'],
+    image:
+      'https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=format&fit=crop&w=1200&q=70',
+    gallery: [
+      'https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=format&fit=crop&w=1200&q=70',
+      'https://images.pexels.com/photos/32865198/pexels-photo-32865198.jpeg?auto=format&fit=crop&w=1200&q=70'
+    ],
+    prices: {
+      1: 89,
+      2: 89,
+      3: 89,
+      4: 89,
+      5: 89,
+      6: 89,
+      7: 89,
+      8: 89,
+      9: 89,
+      10: 89,
+      11: 89,
+      12: 89
+    },
+    badge: 'Spécial mercredi'
+  },
+  {
     slug: 'tulum-turtles-cenotes',
     name: 'Tulum sous l’eau',
     duration: 'Journée complète • Culture + eau',
@@ -1489,7 +1519,7 @@ function initTourPage(tours, languageManager) {
   if (!tourPage || !tours.length) return;
 
   const params = new URLSearchParams(window.location.search);
-  const slug = params.get('tour');
+  const slug = params.get('tour') || tourPage.dataset.defaultTour;
   const baseTour = tours.find((item) => item.slug === slug) || tours[0];
   if (!baseTour) return;
 
