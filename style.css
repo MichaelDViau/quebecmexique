@@ -1,7 +1,7 @@
 :root {
-  --background: linear-gradient(135deg, #eff4ff 0%, #dce7ff 100%);
-  --surface: rgba(244, 247, 255, 0.94);
-  --surface-strong: #e0eaff;
+  --background: linear-gradient(135deg, #f9fcff 0%, #e6f2ff 100%);
+  --surface: rgba(255, 255, 255, 0.96);
+  --surface-strong: #edf5ff;
   --text: #102a4f;
   --text-muted: rgba(16, 42, 79, 0.7);
   --accent: #103eb8;
@@ -14,7 +14,7 @@
   --radius-md: 18px;
   --radius-sm: 12px;
   --transition: all 0.4s ease;
-  --favorite-card-bg: linear-gradient(180deg, #f0f5ff 0%, #dbe7ff 100%);
+  --favorite-card-bg: linear-gradient(180deg, #f8fbff 0%, #e3f1ff 100%);
   --favorite-card-border: rgba(16, 62, 184, 0.16);
   --favorite-card-text: #10224a;
   --favorite-card-muted: rgba(16, 34, 74, 0.7);
@@ -22,7 +22,7 @@
   --favorite-card-badge-bg: linear-gradient(135deg, #4f7dff 0%, #103eb8 100%);
   --favorite-card-badge-text: #f6fffd;
   --favorite-card-deal-color: #103eb8;
-  --hero-panel-bg: rgba(240, 245, 255, 0.9);
+  --hero-panel-bg: rgba(255, 255, 255, 0.9);
   --hero-panel-text: #10224a;
   --hero-panel-muted: rgba(16, 42, 79, 0.7);
 }
@@ -96,14 +96,39 @@ main {
   color: #facc15;
   text-align: center;
   box-shadow: 0 30px 60px rgba(16, 42, 79, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-banner__price {
+  position: absolute;
+  left: clamp(1.5rem, 4vw, 4rem);
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(5.5rem, 10vw, 8rem);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: #facc15;
+  color: #1d4ed8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  box-shadow: 0 20px 35px rgba(15, 76, 129, 0.4);
+  border: 4px solid rgba(255, 255, 255, 0.6);
+}
+
+.promo-banner__price span {
+  font-size: clamp(1.35rem, 2.8vw, 2.1rem);
 }
 
 .promo-banner__content {
   max-width: 880px;
   margin: 0 auto;
   display: grid;
-  gap: 0.5rem;
+  gap: 0.75rem;
   justify-items: center;
+  padding-left: clamp(0rem, 10vw, 7.5rem);
 }
 
 .promo-banner__eyebrow {
@@ -129,6 +154,34 @@ main {
   font-size: 1.2rem;
   font-weight: 600;
   color: #fde047;
+}
+
+.promo-banner__cta {
+  background: #ffffff;
+  color: #0c2f8a;
+  box-shadow: 0 18px 25px rgba(0, 0, 0, 0.25);
+}
+
+.promo-banner__cta:hover,
+.promo-banner__cta:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 35px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 720px) {
+  .promo-banner {
+    padding-bottom: 3rem;
+  }
+
+  .promo-banner__price {
+    position: static;
+    transform: none;
+    margin: 0 auto 1rem;
+  }
+
+  .promo-banner__content {
+    padding-left: 0;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
