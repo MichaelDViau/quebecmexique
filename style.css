@@ -27,31 +27,6 @@
   --hero-panel-muted: rgba(16, 42, 79, 0.7);
 }
 
-html.dark-mode,
-body.dark-mode {
-  --background: linear-gradient(135deg, #0c2f24 0%, #0f4736 100%);
-  --surface: rgba(12, 58, 44, 0.88);
-  --surface-strong: #0b2a21;
-  --text: #e5f6ee;
-  --text-muted: rgba(186, 226, 208, 0.78);
-  --accent: #3ccf8e;
-  --accent-strong: #26a96c;
-  --accent-soft: rgba(60, 207, 142, 0.22);
-  --nav-bg: rgba(10, 40, 32, 0.95);
-  --nav-border: rgba(60, 207, 142, 0.28);
-  --shadow: 0 24px 36px rgba(3, 17, 12, 0.55);
-  --favorite-card-bg: linear-gradient(180deg, rgba(9, 38, 30, 0.92) 0%, rgba(6, 23, 18, 0.92) 100%);
-  --favorite-card-border: rgba(60, 207, 142, 0.28);
-  --favorite-card-text: #e9fff4;
-  --favorite-card-muted: rgba(186, 226, 208, 0.78);
-  --favorite-card-shadow: 0 30px 60px rgba(2, 12, 8, 0.55);
-  --favorite-card-badge-bg: linear-gradient(135deg, #3ccf8e 0%, #1f8f59 100%);
-  --favorite-card-badge-text: #052016;
-  --favorite-card-deal-color: #3ccf8e;
-  --hero-panel-bg: rgba(7, 32, 25, 0.78);
-  --hero-panel-text: #f1fff8;
-  --hero-panel-muted: rgba(186, 226, 208, 0.82);
-}
 
 * {
   box-sizing: border-box;
@@ -140,7 +115,7 @@ main {
   align-items: center;
   justify-content: flex-start;
   gap: 1.5rem;
-  padding: clamp(1.1rem, 1.5vw, 1.35rem) clamp(1.5rem, 4vw, 4.5rem);
+  padding: clamp(0.75rem, 1vw, 1rem) clamp(1.5rem, 4vw, 4.5rem);
   background: var(--nav-bg);
   border-bottom: 1px solid var(--nav-border);
   box-shadow: 0 18px 32px rgba(15, 58, 93, 0.18);
@@ -160,7 +135,7 @@ main {
 }
 
 .nav__logo-icon {
-  width: clamp(3.4rem, 5.2vw, 4.8rem);
+  width: clamp(3.9rem, 6.2vw, 5.6rem);
   aspect-ratio: 1 / 1;
   display: inline-flex;
   align-items: center;
@@ -179,33 +154,25 @@ main {
 .nav__logo-text {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.3rem;
   line-height: 1;
   text-transform: uppercase;
 }
 
 .nav__logo-title {
-  font-size: clamp(1.45rem, 3.1vw, 2rem);
+  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
   font-weight: 700;
   letter-spacing: 0.16em;
 }
 
 .nav__logo-subtitle {
-  font-size: clamp(0.8rem, 1.4vw, 1.05rem);
+  font-size: clamp(0.9rem, 1.6vw, 1.2rem);
   font-weight: 600;
   letter-spacing: 0.32em;
   color: var(--accent);
 }
 
-html.dark-mode .nav__logo-icon,
-body.dark-mode .nav__logo-icon {
-  color: var(--accent-strong);
-}
 
-html.dark-mode .nav__logo-subtitle,
-body.dark-mode .nav__logo-subtitle {
-  color: var(--accent-strong);
-}
 
 .nav__links {
   display: flex;
@@ -298,18 +265,7 @@ body.dark-mode .nav__logo-subtitle {
   margin-left: 0.75rem;
 }
 
-html.dark-mode .nav__control,
-body.dark-mode .nav__control {
-  background: rgba(245, 158, 11, 0.18);
-  border-color: rgba(245, 158, 11, 0.35);
-}
 
-html.dark-mode .nav__control:hover,
-html.dark-mode .nav__control:focus-visible,
-body.dark-mode .nav__control:hover,
-body.dark-mode .nav__control:focus-visible {
-  background: rgba(245, 158, 11, 0.28);
-}
 
 .language-toggle[aria-pressed='true'] {
   background: var(--accent);
@@ -317,10 +273,6 @@ body.dark-mode .nav__control:focus-visible {
   border-color: var(--accent);
 }
 
-html.dark-mode .language-toggle[aria-pressed='true'],
-body.dark-mode .language-toggle[aria-pressed='true'] {
-  color: #0b1f3a;
-}
 
 .hero-slider {
   position: relative;
@@ -615,10 +567,6 @@ body.dark-mode .language-toggle[aria-pressed='true'] {
   padding-block-end: clamp(1.5rem, 3vw, 2.5rem);
 }
 
-html.dark-mode .section--difference,
-body.dark-mode .section--difference {
-  background: linear-gradient(135deg, rgba(17, 45, 78, 0.85) 0%, rgba(9, 25, 44, 0.92) 100%);
-}
 
 .difference {
   max-width: min(100%, 1200px);
@@ -680,12 +628,6 @@ body.dark-mode .section--difference {
   box-shadow: 0 32px 48px rgba(15, 58, 93, 0.22);
 }
 
-html.dark-mode .difference-item__icon,
-body.dark-mode .difference-item__icon {
-  background: rgba(245, 158, 11, 0.22);
-  color: var(--accent);
-  box-shadow: 0 12px 26px rgba(245, 158, 11, 0.2);
-}
 
 .tours-assurance {
   background: var(--accent-soft);
@@ -913,11 +855,6 @@ body.dark-mode .difference-item__icon {
   --favorite-card-shadow: 0 30px 60px rgba(1, 10, 20, 0.55);
 }
 
-.dark-mode .section--favorites,
-html.dark-mode .section--favorites {
-  --favorite-card-text: #f8fbff;
-  --favorite-card-muted: rgba(232, 240, 255, 0.9);
-}
 
 .section--favorites .section__intro h2 {
   color: var(--favorites-heading-color);
@@ -969,12 +906,6 @@ html.dark-mode .section--favorites {
   display: none;
 }
 
-html.dark-mode .favorites-carousel__viewport,
-body.dark-mode .favorites-carousel__viewport {
-  background: rgba(17, 45, 78, 0.88);
-  border: 1px solid var(--favorite-card-border);
-  box-shadow: 0 24px 48px rgba(1, 10, 20, 0.55);
-}
 
 .favorites-carousel__track {
   display: flex;
@@ -1007,12 +938,6 @@ body.dark-mode .favorites-carousel__viewport {
   box-shadow: 0 32px 60px rgba(5, 20, 38, 0.45);
 }
 
-html.dark-mode .favorite-card:hover,
-body.dark-mode .favorite-card:hover,
-html.dark-mode .favorite-card:focus-within,
-body.dark-mode .favorite-card:focus-within {
-  box-shadow: 0 36px 60px rgba(0, 0, 0, 0.55);
-}
 
 .favorite-card__media {
   position: relative;
@@ -1310,11 +1235,6 @@ body.dark-mode .favorite-card:focus-within {
   right: clamp(1.25rem, 4vw, 2rem);
 }
 
-body.dark-mode .tour-gallery__arrow {
-  background: rgba(11, 31, 58, 0.82);
-  color: #f8fbff;
-  border: 1px solid rgba(248, 251, 255, 0.12);
-}
 
 @media (max-width: 720px) {
   .tour-hero {
@@ -2041,96 +1961,18 @@ body.dark-mode .tour-gallery__arrow {
   background: rgba(255, 255, 255, 0.25);
 }
 
-html.dark-mode .floating-contact__link,
-body.dark-mode .floating-contact__link {
-  box-shadow: 0 18px 34px rgba(4, 20, 41, 0.5);
-}
 
-html.dark-mode .floating-contact__link:hover,
-html.dark-mode .floating-contact__link:focus-visible,
-body.dark-mode .floating-contact__link:hover,
-body.dark-mode .floating-contact__link:focus-visible {
-  box-shadow: 0 24px 40px rgba(4, 20, 41, 0.55);
-}
 
-html.dark-mode #tour-builder .section__intro h2,
-body.dark-mode #tour-builder .section__intro h2,
-html.dark-mode .section--accent .section__intro h2,
-body.dark-mode .section--accent .section__intro h2,
-html.dark-mode #tour-rows-heading,
-body.dark-mode #tour-rows-heading,
-html.dark-mode #contact-planner-heading,
-body.dark-mode #contact-planner-heading {
-  color: #ffffff;
-}
 
-html.dark-mode .tour-grid-card__title,
-body.dark-mode .tour-grid-card__title {
-  color: var(--accent);
-}
 
-html.dark-mode .tour-hero__title,
-body.dark-mode .tour-hero__title {
-  color: var(--accent);
-}
 
-html.dark-mode .tour-details__panel--booking,
-body.dark-mode .tour-details__panel--booking {
-  color: #ffffff;
-}
 
-html.dark-mode .tour-details__panel h3,
-body.dark-mode .tour-details__panel h3,
-html.dark-mode .tour-details__panel h4,
-body.dark-mode .tour-details__panel h4 {
-  color: var(--accent);
-}
 
-html.dark-mode .tour-booking__label,
-body.dark-mode .tour-booking__label,
-html.dark-mode .tour-booking__price,
-body.dark-mode .tour-booking__price,
-html.dark-mode .tour-booking__price strong,
-body.dark-mode .tour-booking__price strong,
-html.dark-mode .tour-booking__helper,
-body.dark-mode .tour-booking__helper,
-html.dark-mode .tour-booking__note,
-body.dark-mode .tour-booking__note {
-  color: #ffffff;
-}
 
-html.dark-mode .tour-booking__label,
-body.dark-mode .tour-booking__label {
-  color: var(--accent);
-}
 
-html.dark-mode .tour-booking__per-person,
-body.dark-mode .tour-booking__per-person,
-html.dark-mode .tour-booking__disclaimer,
-body.dark-mode .tour-booking__disclaimer,
-html.dark-mode .tour-booking__checkbox,
-body.dark-mode .tour-booking__checkbox {
-  color: rgba(255, 255, 255, 0.78);
-}
 
-html.dark-mode .tour-booking .field label,
-body.dark-mode .tour-booking .field label {
-  color: #ffffff;
-}
 
-html.dark-mode .tour-booking input,
-body.dark-mode .tour-booking input,
-html.dark-mode .tour-booking select,
-body.dark-mode .tour-booking select {
-  background: rgba(11, 27, 49, 0.65);
-  border-color: rgba(255, 255, 255, 0.22);
-  color: #ffffff;
-}
 
-html.dark-mode .tour-booking input::placeholder,
-body.dark-mode .tour-booking input::placeholder {
-  color: rgba(255, 255, 255, 0.65);
-}
 
 @media (max-width: 992px) {
   .cta {
@@ -2194,7 +2036,7 @@ body.dark-mode .tour-booking input::placeholder {
   }
 
   .nav__logo-icon {
-    width: clamp(2.8rem, 7vw, 3.6rem);
+    width: clamp(3.2rem, 8vw, 4.4rem);
   }
 
   .nav__links {
@@ -2228,10 +2070,6 @@ body.dark-mode .tour-booking input::placeholder {
 
   .nav__links a {
     font-size: 1.35rem;
-  }
-
-  .theme-toggle {
-    display: none;
   }
 
   .hero-slider {

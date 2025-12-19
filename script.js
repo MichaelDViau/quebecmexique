@@ -15,8 +15,6 @@ const translations = {
       'floatingContact.whatsappLabel': 'WhatsApp',
       'floatingContact.emailLabel': 'Courriel',
       'floatingContact.instagramLabel': 'Instagram',
-      'themeToggle.dark': 'Mode sombre',
-      'themeToggle.light': 'Mode clair',
       'heroSlider.goToSlide': 'Aller à la diapositive {{index}}',
       'tourBuilder.remove': 'Retirer',
       'inquiry.emailSubject': 'Idée de journée sur mesure de {{name}}',
@@ -823,8 +821,6 @@ function createLanguageManager(pageKey) {
 }
 
 (function () {
-  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
-
   document.addEventListener('DOMContentLoaded', () => {
     const pageKey = document.body?.dataset.page || 'home';
     const languageManager = createLanguageManager(pageKey);
@@ -832,7 +828,6 @@ function createLanguageManager(pageKey) {
 
     setupNavigation();
     setupLanguageToggle(languageManager);
-    setupThemeToggle(prefersDark, languageManager);
     window.addEventListener('resize', scheduleNavControlWidthSync, { passive: true });
 
     const refreshTourLists = () => {
@@ -883,7 +878,7 @@ let navControlWidthSyncScheduled = false;
 
 function syncNavControlWidths() {
   navControlWidthSyncScheduled = false;
-  const controls = Array.from(document.querySelectorAll('.language-toggle, .theme-toggle'));
+  const controls = Array.from(document.querySelectorAll('.language-toggle'));
   if (controls.length < 2) {
     return;
   }
@@ -930,66 +925,6 @@ function setupLanguageToggle(languageManager) {
   toggle.textContent = 'Français';
   toggle.setAttribute('aria-pressed', 'true');
   scheduleNavControlWidthSync();
-}
-
-function setupThemeToggle(prefersDark, languageManager) {
-  const toggle = document.querySelector('[data-theme-toggle]');
-  if (!toggle) return;
-
-  const rootElement = document.documentElement;
-  const getStoredTheme = () => {
-    try {
-      return localStorage.getItem('preferred-theme');
-    } catch (error) {
-      return null;
-    }
-  };
-
-  const setStoredTheme = (value) => {
-    try {
-      localStorage.setItem('preferred-theme', value);
-    } catch (error) {
-      /* ignore storage errors */
-    }
-  };
-
-  const applyTheme = (isDark) => {
-    rootElement.classList.toggle('dark-mode', isDark);
-    if (document.body) {
-      document.body.classList.toggle('dark-mode', isDark);
-    }
-  };
-
-  const storedTheme = getStoredTheme();
-  const shouldUseDark = storedTheme === 'dark' || (!storedTheme && prefersDark?.matches);
-
-  applyTheme(Boolean(shouldUseDark));
-  toggle.setAttribute('aria-pressed', shouldUseDark ? 'true' : 'false');
-
-  const updateLabel = (lang) => {
-    const isDark = rootElement.classList.contains('dark-mode');
-    const key = isDark ? 'themeToggle.light' : 'themeToggle.dark';
-    toggle.textContent = languageManager.translate(key, {}, lang);
-    scheduleNavControlWidthSync();
-  };
-
-  toggle.addEventListener('click', () => {
-    const nextIsDark = !rootElement.classList.contains('dark-mode');
-    applyTheme(nextIsDark);
-    toggle.setAttribute('aria-pressed', nextIsDark ? 'true' : 'false');
-    setStoredTheme(nextIsDark ? 'dark' : 'light');
-    updateLabel(languageManager.getLanguage());
-  });
-
-  prefersDark?.addEventListener?.('change', (event) => {
-    if (!getStoredTheme()) {
-      applyTheme(event.matches);
-      toggle.setAttribute('aria-pressed', event.matches ? 'true' : 'false');
-      updateLabel(languageManager.getLanguage());
-    }
-  });
-
-  languageManager.onChange(updateLabel);
 }
 
 function setupHeroSlider(languageManager) {
