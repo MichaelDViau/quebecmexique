@@ -1,56 +1,56 @@
 :root {
-  --background: linear-gradient(135deg, #0f6a76 0%, #2bb39a 100%);
-  --surface: rgba(239, 249, 248, 0.92);
-  --surface-strong: #e2f4f2;
-  --text: #103b4a;
-  --text-muted: rgba(16, 59, 74, 0.72);
-  --accent: #d97a2b;
-  --accent-strong: #b4571f;
-  --accent-soft: rgba(217, 122, 43, 0.18);
-  --nav-bg: rgba(225, 246, 244, 0.95);
-  --nav-border: rgba(16, 59, 74, 0.1);
-  --shadow: 0 25px 45px rgba(16, 59, 74, 0.18);
+  --background: linear-gradient(135deg, #eff4ff 0%, #dce7ff 100%);
+  --surface: rgba(244, 247, 255, 0.94);
+  --surface-strong: #e0eaff;
+  --text: #102a4f;
+  --text-muted: rgba(16, 42, 79, 0.7);
+  --accent: #103eb8;
+  --accent-strong: #0c2f8a;
+  --accent-soft: rgba(16, 62, 184, 0.14);
+  --nav-bg: rgba(232, 241, 255, 0.95);
+  --nav-border: rgba(16, 62, 184, 0.12);
+  --shadow: 0 25px 45px rgba(16, 42, 79, 0.14);
   --radius-lg: 24px;
   --radius-md: 18px;
   --radius-sm: 12px;
   --transition: all 0.4s ease;
-  --favorite-card-bg: linear-gradient(180deg, #eef7f6 0%, #d8eeea 100%);
-  --favorite-card-border: rgba(16, 59, 74, 0.18);
-  --favorite-card-text: #0b2f3a;
-  --favorite-card-muted: rgba(11, 47, 58, 0.72);
-  --favorite-card-shadow: 0 25px 50px rgba(16, 59, 74, 0.16);
-  --favorite-card-badge-bg: linear-gradient(135deg, #2bb39a 0%, #0f6a76 100%);
+  --favorite-card-bg: linear-gradient(180deg, #f0f5ff 0%, #dbe7ff 100%);
+  --favorite-card-border: rgba(16, 62, 184, 0.16);
+  --favorite-card-text: #10224a;
+  --favorite-card-muted: rgba(16, 34, 74, 0.7);
+  --favorite-card-shadow: 0 25px 50px rgba(16, 42, 79, 0.14);
+  --favorite-card-badge-bg: linear-gradient(135deg, #4f7dff 0%, #103eb8 100%);
   --favorite-card-badge-text: #f6fffd;
-  --favorite-card-deal-color: #d97a2b;
-  --hero-panel-bg: rgba(239, 249, 248, 0.9);
-  --hero-panel-text: #0b2f3a;
-  --hero-panel-muted: rgba(16, 59, 74, 0.72);
+  --favorite-card-deal-color: #103eb8;
+  --hero-panel-bg: rgba(240, 245, 255, 0.9);
+  --hero-panel-text: #10224a;
+  --hero-panel-muted: rgba(16, 42, 79, 0.7);
 }
 
 html.dark-mode,
 body.dark-mode {
-  --background: linear-gradient(135deg, #072a33 0%, #0c3f3a 100%);
-  --surface: rgba(12, 63, 58, 0.88);
-  --surface-strong: #0a2f35;
-  --text: #e7f5f3;
-  --text-muted: rgba(196, 231, 226, 0.78);
-  --accent: #f4b860;
-  --accent-strong: #d97a2b;
-  --accent-soft: rgba(244, 184, 96, 0.22);
-  --nav-bg: rgba(9, 45, 52, 0.95);
-  --nav-border: rgba(244, 184, 96, 0.28);
-  --shadow: 0 24px 36px rgba(4, 20, 24, 0.55);
-  --favorite-card-bg: linear-gradient(180deg, rgba(8, 43, 48, 0.92) 0%, rgba(6, 28, 33, 0.92) 100%);
-  --favorite-card-border: rgba(244, 184, 96, 0.28);
-  --favorite-card-text: #fff7e8;
-  --favorite-card-muted: rgba(255, 229, 191, 0.78);
-  --favorite-card-shadow: 0 30px 60px rgba(2, 12, 15, 0.55);
-  --favorite-card-badge-bg: linear-gradient(135deg, #f4b860 0%, #d97a2b 100%);
-  --favorite-card-badge-text: #082a33;
-  --favorite-card-deal-color: #f4b860;
-  --hero-panel-bg: rgba(7, 36, 40, 0.78);
-  --hero-panel-text: #f2fbfa;
-  --hero-panel-muted: rgba(197, 231, 226, 0.82);
+  --background: linear-gradient(135deg, #0c2f24 0%, #0f4736 100%);
+  --surface: rgba(12, 58, 44, 0.88);
+  --surface-strong: #0b2a21;
+  --text: #e5f6ee;
+  --text-muted: rgba(186, 226, 208, 0.78);
+  --accent: #3ccf8e;
+  --accent-strong: #26a96c;
+  --accent-soft: rgba(60, 207, 142, 0.22);
+  --nav-bg: rgba(10, 40, 32, 0.95);
+  --nav-border: rgba(60, 207, 142, 0.28);
+  --shadow: 0 24px 36px rgba(3, 17, 12, 0.55);
+  --favorite-card-bg: linear-gradient(180deg, rgba(9, 38, 30, 0.92) 0%, rgba(6, 23, 18, 0.92) 100%);
+  --favorite-card-border: rgba(60, 207, 142, 0.28);
+  --favorite-card-text: #e9fff4;
+  --favorite-card-muted: rgba(186, 226, 208, 0.78);
+  --favorite-card-shadow: 0 30px 60px rgba(2, 12, 8, 0.55);
+  --favorite-card-badge-bg: linear-gradient(135deg, #3ccf8e 0%, #1f8f59 100%);
+  --favorite-card-badge-text: #052016;
+  --favorite-card-deal-color: #3ccf8e;
+  --hero-panel-bg: rgba(7, 32, 25, 0.78);
+  --hero-panel-text: #f1fff8;
+  --hero-panel-muted: rgba(186, 226, 208, 0.82);
 }
 
 * {
@@ -160,7 +160,7 @@ main {
 }
 
 .nav__logo-icon {
-  width: clamp(2.6rem, 4vw, 3.4rem);
+  width: clamp(3.4rem, 5.2vw, 4.8rem);
   aspect-ratio: 1 / 1;
   display: inline-flex;
   align-items: center;
@@ -185,13 +185,13 @@ main {
 }
 
 .nav__logo-title {
-  font-size: clamp(1.25rem, 2.6vw, 1.7rem);
+  font-size: clamp(1.45rem, 3.1vw, 2rem);
   font-weight: 700;
   letter-spacing: 0.16em;
 }
 
 .nav__logo-subtitle {
-  font-size: clamp(0.7rem, 1.2vw, 0.9rem);
+  font-size: clamp(0.8rem, 1.4vw, 1.05rem);
   font-weight: 600;
   letter-spacing: 0.32em;
   color: var(--accent);
@@ -2194,7 +2194,7 @@ body.dark-mode .tour-booking input::placeholder {
   }
 
   .nav__logo-icon {
-    width: clamp(2.2rem, 6vw, 2.9rem);
+    width: clamp(2.8rem, 7vw, 3.6rem);
   }
 
   .nav__links {
@@ -2268,16 +2268,16 @@ body.dark-mode .tour-booking input::placeholder {
   }
 
   .nav__logo-icon {
-    width: 2.35rem;
+    width: 2.75rem;
   }
 
   .nav__logo-title {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     letter-spacing: 0.12em;
   }
 
   .nav__logo-subtitle {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     letter-spacing: 0.26em;
   }
 
