@@ -49,7 +49,8 @@ const translations = {
       'home.hero.dots': 'Diapositives vedettes',
       'home.difference.heading': 'Vivez la différence',
       'home.difference.captured.title': 'Immortalisé',
-      'home.difference.captured.copy': 'Photos offertes à chaque excursion Privée (Promo non valide pour tour avec transport partagé)',
+      'home.difference.captured.copy':
+        'Photos offertes gratuitement à chaque excursion Privée (Promo non valide pour tour avec transport partagé)',
       'home.difference.pace.title': 'À votre rythme',
       'home.difference.pace.copy': 'Choisissez votre heure de départ, évitez les prises en charge, créez votre horaire',
       'home.difference.journey.title': 'Votre aventure',
@@ -362,44 +363,18 @@ function getTourContent(tour, lang = DEFAULT_LANGUAGE) {
 
 const adventureTours = [
   {
-    slug: 'turtles-cenotes',
-    name: 'Tortues + Cenotes',
-    duration: 'Demi-journée • Océan + jungle',
-    tagline: '· Tortues marines<br>· 3 cenotes<br>· Collation et boissons',
-    description:
-      'Passez une matinée de rêve dans l’eau, en commençant par un snorkel doux avec les tortues de mer et en terminant dans trois cenotes cristallins cachés dans la jungle. Chaque arrêt ressemble à une carte postale, avec du temps pour flotter, respirer et profiter. Une aventure simple et mémorable qui reste grandiose et inoubliable.',
-    includes: ['🐢 Nager avec les tortues marines', '🤿 Snorkel dans 3 cenotes', '🥤 Collation et boissons'],
-    image:
-      'https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?_gl=1*1leu1xd*_ga*NTc3NjYyMTQzLjE3NjU4MTE2NzU.*_ga_8JE65Q40S6*czE3NjU5MDM2NjEkbzMkZzEkdDE3NjU5MDM2ODckajM0JGwwJGgw',
-    gallery: [
-      'https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?_gl=1*1leu1xd*_ga*NTc3NjYyMTQzLjE3NjU4MTE2NzU.*_ga_8JE65Q40S6*czE3NjU5MDM2NjEkbzMkZzEkdDE3NjU5MDM2ODckajM0JGwwJGgw',
-      'https://images.pexels.com/photos/32865198/pexels-photo-32865198.jpeg?auto=format&fit=crop&w=1200&q=70',
-      'https://images.pexels.com/photos/32865198/pexels-photo-32865198.jpeg?auto=format&fit=crop&w=1200&q=70&sat=-8'
-    ],
-    prices: {
-      1: 340,
-      2: 218,
-      3: 207,
-      4: 184,
-      5: 162,
-      6: 151,
-      7: 140,
-      8: 129,
-      9: 124,
-      10: 119,
-      11: 119,
-      12: 119
-    },
-    badge: 'Coup de cœur'
-  },
-  {
     slug: 'promo-mercredi',
     name: 'Promo mercredi : Tortues + Cenote',
     duration: 'Demi-journée • Spécial mercredi',
     tagline: '· Tortues marines<br>· Cenote cristallin<br>· Collation fraîche',
     description:
       'Profitez de notre offre spéciale du mercredi pour nager avec les tortues puis vous rafraîchir dans un cenote lumineux. C’est le combo parfait pour une matinée douce, simple et pleine de magie bleue. Places limitées chaque mercredi.',
-    includes: ['🐢 Snorkel avec les tortues', '🌊 Nage dans un cenote', '🥤 Collation et boissons'],
+    includes: [
+      '🐢 Snorkel avec les tortues',
+      '🌊 2 cenotes',
+      '🧗 1 rappel (optionnel, sans frais supplémentaires)',
+      '🥪 Snack box et eau'
+    ],
     image:
       'https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=format&fit=crop&w=1200&q=70',
     gallery: [
@@ -477,6 +452,37 @@ const adventureTours = [
       12: 74
     },
     badge: 'Nouvel itinéraire'
+  },
+  {
+    slug: 'turtles-cenotes',
+    name: 'Tortues + Cenotes',
+    duration: 'Demi-journée • Océan + jungle',
+    tagline: '· Tortues marines<br>· 3 cenotes<br>· Collation et boissons',
+    description:
+      'Passez une matinée de rêve dans l’eau, en commençant par un snorkel doux avec les tortues de mer et en terminant dans trois cenotes cristallins cachés dans la jungle. Chaque arrêt ressemble à une carte postale, avec du temps pour flotter, respirer et profiter. Une aventure simple et mémorable qui reste grandiose et inoubliable.',
+    includes: ['🐢 Nager avec les tortues marines', '🤿 Snorkel dans 3 cenotes', '🥤 Collation et boissons'],
+    image:
+      'https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?_gl=1*1leu1xd*_ga*NTc3NjYyMTQzLjE3NjU4MTE2NzU.*_ga_8JE65Q40S6*czE3NjU5MDM2NjEkbzMkZzEkdDE3NjU5MDM2ODckajM0JGwwJGgw',
+    gallery: [
+      'https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?_gl=1*1leu1xd*_ga*NTc3NjYyMTQzLjE3NjU4MTE2NzU.*_ga_8JE65Q40S6*czE3NjU5MDM2NjEkbzMkZzEkdDE3NjU5MDM2ODckajM0JGwwJGgw',
+      'https://images.pexels.com/photos/32865198/pexels-photo-32865198.jpeg?auto=format&fit=crop&w=1200&q=70',
+      'https://images.pexels.com/photos/32865198/pexels-photo-32865198.jpeg?auto=format&fit=crop&w=1200&q=70&sat=-8'
+    ],
+    prices: {
+      1: 340,
+      2: 218,
+      3: 207,
+      4: 184,
+      5: 162,
+      6: 151,
+      7: 140,
+      8: 129,
+      9: 124,
+      10: 119,
+      11: 119,
+      12: 119
+    },
+    badge: 'Coup de cœur'
   },
   {
     slug: 'tulum-express',
@@ -1282,7 +1288,7 @@ function createFavoriteCard(tour, languageManager) {
   const ariaLabel = languageManager?.translate('tour.card.viewAria', { name: content.name }, lang) || content.name;
   const tagLabel = content.badge || content.tagline;
   const article = document.createElement('article');
-  article.className = 'card favorite-card';
+  article.className = `card favorite-card${tour.slug === 'promo-mercredi' ? ' favorite-card--promo' : ''}`;
   article.setAttribute('role', 'listitem');
   article.innerHTML = `
     <a class="favorite-card__media" href="tour.html?tour=${tour.slug}" aria-label="${ariaLabel}">

@@ -1152,6 +1152,33 @@ main {
   box-shadow: 0 26px 55px rgba(15, 76, 129, 0.45);
 }
 
+.favorite-card--promo {
+  --favorite-card-bg: #facc15;
+  --favorite-card-border: rgba(217, 119, 6, 0.6);
+  --favorite-card-text: #ffffff;
+  --favorite-card-muted: rgba(255, 255, 255, 0.92);
+  --favorite-card-deal-color: #ffffff;
+  --favorite-card-shadow: 0 28px 52px rgba(180, 83, 9, 0.35);
+}
+
+.favorite-card--promo .favorite-card__media::after {
+  background: linear-gradient(180deg, rgba(250, 204, 21, 0) 50%, rgba(250, 204, 21, 0.7) 100%);
+}
+
+.favorite-card--promo .favorite-card__tag,
+.favorite-card--promo .favorite-card__badge {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: none;
+}
+
+.favorite-card--promo .favorite-card__cta {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  color: #ffffff;
+}
+
 .favorites-carousel__arrow {
   position: absolute;
   top: 50%;
@@ -1368,7 +1395,7 @@ main {
 }
 
 .tour-details .section__intro h2 {
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .tour-details__grid {
@@ -1417,6 +1444,60 @@ main {
   left: 0.85rem;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.tour-extras {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(15, 58, 93, 0.12);
+}
+
+.tour-extras__media {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.tour-extras__media img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  box-shadow: 0 16px 32px rgba(11, 47, 85, 0.15);
+}
+
+.tour-extras__content h4 {
+  margin: 0 0 0.35rem;
+}
+
+.tour-extras__content p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.tour-excludes {
+  margin-top: 1.25rem;
+}
+
+.tour-excludes h4 {
+  margin: 0 0 0.35rem;
+}
+
+.tour-excludes__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.tour-excludes__list li {
+  padding: 0.65rem 0.75rem;
+  background: rgba(15, 58, 93, 0.08);
+  border-radius: var(--radius-md);
 }
 
 .tour-details__panel--booking {
