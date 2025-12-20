@@ -866,9 +866,12 @@ function createLanguageManager(pageKey) {
     window.addEventListener('resize', scheduleNavControlWidthSync, { passive: true });
 
     const refreshTourLists = () => {
+      const catalogTours = isToursPage
+        ? adventureTours.filter((tour) => tour.slug !== 'promo-mercredi')
+        : adventureTours;
       if (isToursPage) {
-        buildToursHeroSlider(adventureTours, languageManager);
-        buildToursCatalog(adventureTours, languageManager);
+        buildToursHeroSlider(catalogTours, languageManager);
+        buildToursCatalog(catalogTours, languageManager);
       }
       buildFavoritesCarousel(adventureTours, languageManager);
       setupCardCarousels();
