@@ -373,7 +373,7 @@ const adventureTours = [
     duration: 'Demi-journée • Promo mercredi',
     tagline: '· Tortues marines<br>· Cenote cristallin<br>· Collation fraîche',
     description:
-      'Profitez de notre offre spéciale du mercredi pour nager avec les tortues puis vous rafraîchir dans un cenote lumineux. C’est le combo parfait pour une matinée douce, simple et pleine de magie bleue. Places limitées chaque mercredi.',
+      'Offre spéciale du mercredi – Exclusivité francophone. Profitez de notre super promo du mercredi avec une matinée magique combinant la nage avec les tortues marines et la découverte de deux cenotes aux eaux cristallines, le tout accompagné d’un guide 100 % francophone. L’excursion inclut le transport, l’équipement de snorkeling, un lunch inclus, ainsi que l’accès à deux cenotes lumineux. Une troisième cenote peut être visitée en option, sans aucun coût supplémentaire, avec une descente en rappel pour une expérience encore plus unique et mémorable, selon le rythme et l’envie du groupe. Cette sortie est offerte uniquement en français, sans groupes multilingues et sans explications en plusieurs langues : aucune surprise, tout est clair et simple. Une expérience douce, conviviale et parfaitement adaptée au marché québécois. Places très limitées chaque mercredi, réservation recommandée.',
     includes: [
       '🐢 Snorkel avec les tortues',
       '🌊 2 cenotes',
