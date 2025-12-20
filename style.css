@@ -105,21 +105,14 @@ main {
   left: clamp(1.5rem, 4vw, 4rem);
   top: 50%;
   transform: translateY(-50%);
-  width: clamp(5.5rem, 10vw, 8rem);
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  background: #facc15;
-  color: #1d4ed8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  box-shadow: 0 20px 35px rgba(15, 76, 129, 0.4);
-  border: 4px solid rgba(255, 255, 255, 0.6);
+  width: clamp(7.5rem, 18vw, 13rem);
+  display: block;
 }
 
-.promo-banner__price span {
-  font-size: clamp(1.7rem, 3.8vw, 2.6rem);
+.promo-banner__price img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .promo-banner__content {
@@ -1553,6 +1546,8 @@ main {
   margin: 0 0 0.75rem;
   font-size: 0.95rem;
   color: rgba(11, 47, 85, 0.75);
+  align-self: flex-end;
+  text-align: right;
 }
 
 .tour-booking .field label {
@@ -1986,6 +1981,12 @@ main {
 .story-intro h2 {
   text-align: center;
   margin: clamp(2rem, 4vw, 2.8rem) 0 clamp(2.4rem, 4.8vw, 3.36rem);
+}
+
+.story-intro__logo {
+  display: block;
+  width: min(420px, 85%);
+  margin: 0 auto 2.6rem;
 }
 
 .story-message {
