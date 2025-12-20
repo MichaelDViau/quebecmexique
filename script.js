@@ -348,6 +348,11 @@ const translations = {
 
 const SUPPORTED_LANGUAGES = ['fr'];
 const DEFAULT_LANGUAGE = 'fr';
+const PROMO_MERCREDI_URL = 'file:///Users/Aluxka/Documents/GitHub/quebecmexique/promo-mercredi.html';
+
+function getTourLink(tour) {
+  return tour.slug === 'promo-mercredi' ? PROMO_MERCREDI_URL : `tour.html?tour=${tour.slug}`;
+}
 
 function getTourContent(tour, lang = DEFAULT_LANGUAGE) {
   const translation = tour.translations?.[lang] || {};
@@ -1260,7 +1265,7 @@ function buildToursHeroSlider(tours, languageManager) {
       slide.dataset.tourSlug = tour.slug;
       const viewLabel = languageManager?.translate('tour.card.viewAria', { name: content.name }, lang) || content.name;
       slide.innerHTML = `
-        <a class="hero-slide__link" href="tour.html?tour=${tour.slug}" aria-label="${viewLabel}">
+        <a class="hero-slide__link" href="${getTourLink(tour)}" aria-label="${viewLabel}">
           <img class="hero-slide__media" src="${tour.image}" alt="${viewLabel}" loading="lazy" decoding="async" />
           <div class="hero-slide__overlay">
             <h2 data-tour-hero-title>${content.name}</h2>
@@ -1296,7 +1301,7 @@ function createFavoriteCard(tour, languageManager) {
   article.className = `card favorite-card${tour.slug === 'promo-mercredi' ? ' favorite-card--promo' : ''}`;
   article.setAttribute('role', 'listitem');
   article.innerHTML = `
-    <a class="favorite-card__media" href="tour.html?tour=${tour.slug}" aria-label="${ariaLabel}">
+    <a class="favorite-card__media" href="${getTourLink(tour)}" aria-label="${ariaLabel}">
       <img src="${tour.image}" alt="${content.name}" loading="lazy" decoding="async" />
       <span class="favorite-card__tag">${tagLabel}</span>
       <span class="favorite-card__badge">${durationLabel}</span>
@@ -1305,7 +1310,7 @@ function createFavoriteCard(tour, languageManager) {
       <h3>${content.name}</h3>
       <p class="favorite-card__deal">${content.tagline}</p>
       <p class="favorite-card__copy">${content.description}</p>
-      <a class="button button--primary favorite-card__cta" href="tour.html?tour=${tour.slug}">${viewLabel}</a>
+      <a class="button button--primary favorite-card__cta" href="${getTourLink(tour)}">${viewLabel}</a>
     </div>
   `;
   return article;
@@ -1322,7 +1327,7 @@ function createTourGridCard(tour, languageManager) {
   article.setAttribute('role', 'listitem');
   article.innerHTML = `
     <div class="tour-grid-card__media">
-      <a href="tour.html?tour=${tour.slug}" aria-label="${ariaLabel}">
+      <a href="${getTourLink(tour)}" aria-label="${ariaLabel}">
         <img src="${tour.image}" alt="${content.name}" loading="lazy" decoding="async" />
         <span class="tour-grid-card__badge">${badgeLabel}</span>
       </a>
@@ -1331,7 +1336,7 @@ function createTourGridCard(tour, languageManager) {
       <h3 class="tour-grid-card__title">${content.name}</h3>
       <p class="tour-grid-card__meta">${content.duration}</p>
       <p class="tour-grid-card__copy">${content.description}</p>
-      <a class="button button--primary tour-grid-card__cta" href="tour.html?tour=${tour.slug}">${ctaLabel}</a>
+      <a class="button button--primary tour-grid-card__cta" href="${getTourLink(tour)}">${ctaLabel}</a>
     </div>
   `;
   return article;
