@@ -348,7 +348,7 @@ const translations = {
 
 const SUPPORTED_LANGUAGES = ['fr'];
 const DEFAULT_LANGUAGE = 'fr';
-const PROMO_MERCREDI_URL = 'promo-mercredi.html';
+const PROMO_MERCREDI_URL = 'tour.html?tour=promo-mercredi';
 
 function getTourLink(tour) {
   return tour.slug === 'promo-mercredi' ? PROMO_MERCREDI_URL : `tour.html?tour=${tour.slug}`;
