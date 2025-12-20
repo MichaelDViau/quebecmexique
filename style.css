@@ -100,6 +100,15 @@ main {
   overflow: hidden;
 }
 
+.promo-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/turtlepromobanner.jpg") center/cover no-repeat;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
 .promo-banner__price {
   position: absolute;
   left: clamp(1.5rem, 4vw, 4rem);
@@ -107,19 +116,15 @@ main {
   transform: translateY(-50%);
   width: clamp(5.5rem, 10vw, 8rem);
   aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  background: #facc15;
-  color: #1d4ed8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
   box-shadow: 0 20px 35px rgba(15, 76, 129, 0.4);
-  border: 4px solid rgba(255, 255, 255, 0.6);
+  z-index: 1;
 }
 
-.promo-banner__price span {
-  font-size: clamp(1.35rem, 2.8vw, 2.1rem);
+.promo-banner__price img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .promo-banner__content {
@@ -129,6 +134,8 @@ main {
   gap: 0.75rem;
   justify-items: center;
   padding-left: clamp(0rem, 10vw, 7.5rem);
+  position: relative;
+  z-index: 1;
 }
 
 .promo-banner__eyebrow {
@@ -161,6 +168,7 @@ main {
   background: #ffffff;
   color: #0c2f8a;
   box-shadow: 0 18px 25px rgba(0, 0, 0, 0.25);
+  margin-top: 0.75rem;
 }
 
 .promo-banner__cta:hover,
@@ -663,6 +671,7 @@ main {
     rgba(15, 58, 93, 0.14) 100%
   );
   overflow: hidden;
+  margin-top: clamp(2rem, 3vw, 3.5rem);
   padding-block-start: clamp(0.5rem, 1.5vw, 1.25rem);
   padding-block-end: clamp(1.5rem, 3vw, 2.5rem);
 }
