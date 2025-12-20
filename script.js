@@ -365,7 +365,7 @@ const adventureTours = [
   {
     slug: 'promo-mercredi',
     name: 'Promo mercredi : Tortues + Cenote',
-    duration: 'Demi-journée • Spécial mercredi',
+    duration: 'Demi-journée • Promo mercredi',
     tagline: '· Tortues marines<br>· Cenote cristallin<br>· Collation fraîche',
     description:
       'Profitez de notre offre spéciale du mercredi pour nager avec les tortues puis vous rafraîchir dans un cenote lumineux. C’est le combo parfait pour une matinée douce, simple et pleine de magie bleue. Places limitées chaque mercredi.',
@@ -394,7 +394,7 @@ const adventureTours = [
       11: 89,
       12: 89
     },
-    badge: 'Spécial mercredi'
+    badge: 'Promo mercredi'
   },
   {
     slug: 'tulum-turtles-cenotes',
@@ -1286,7 +1286,9 @@ function createFavoriteCard(tour, languageManager) {
   const lang = languageManager?.getLanguage() || DEFAULT_LANGUAGE;
   const content = getTourContent(tour, lang);
   const durationKey = halfDaySlugs.has(tour.slug) ? 'tour.card.halfDay' : 'tour.card.fullDay';
-  const durationLabel = languageManager?.translate(durationKey, {}, lang) || content.duration;
+  const durationLabel = tour.slug === 'promo-mercredi'
+    ? 'Tour Partagé'
+    : (languageManager?.translate(durationKey, {}, lang) || content.duration);
   const viewLabel = languageManager?.translate('tour.card.viewDetails', {}, lang) || 'View details';
   const ariaLabel = languageManager?.translate('tour.card.viewAria', { name: content.name }, lang) || content.name;
   const tagLabel = content.badge || content.tagline;
