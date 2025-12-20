@@ -5,7 +5,7 @@ const translations = {
       'nav.toggle': 'Basculer la navigation',
       'nav.home': 'Accueil',
       'nav.create': 'Excursions',
-      'nav.reviews': 'Avis',
+      'nav.reviews': 'Ce que nos clients disent de nous',
       'nav.story': 'Notre histoire',
       'footer.rights': '© 2025 Québec Mexique (A beyondthereefmexico brand). Tous droits réservés.',
       'floatingContact.aria': 'Options de contact rapide',
@@ -197,51 +197,51 @@ const translations = {
       'tours.contact.submit': 'Envoyer mon idée'
     },
     reviews: {
-      'page.title': 'Avis des voyageurs | Québec Mexique',
+      'page.title': 'Ce que nos clients disent de nous | Québec Mexique',
       'reviews.hero.eyebrow': 'Lettres d’amour de nos voyageurs',
       'reviews.hero.heading': 'Histoires de voyageurs qui sont allés plus loin',
       'reviews.hero.copy':
         'Découvrez comment des voyages sur mesure et des attentions bien pensées ont transformé des rêves en escapades sans effort.',
-      'reviews.featured.heading': 'Avis en vedette',
-      'reviews.featured.one.title': '“Ils ont pensé à chaque détail.”',
+      'reviews.featured.heading': 'Ce que nos clients disent de nous',
+      'reviews.featured.one.title': '“Nager avec les tortues, quel moment.”',
       'reviews.featured.one.copy':
-        '“De la nage nocturne avec les raies manta au souper surprise d’anniversaire sur un banc de sable, l’équipe de Québec Mexique a tout dépassé. On n’a jamais regardé l’heure.” - <strong>Cam &amp; Jordan</strong>',
-      'reviews.featured.two.title': '“Planifier, c’était vraiment le fun.”',
+        '“Le tour des tortues était incroyable, et notre guide francophone connaissait les meilleurs endroits. On s’est sentis en sécurité et bien informés.” - <strong>Élise &amp; Mathieu</strong>',
+      'reviews.featured.two.title': '“Ruines mayas et guide passionné.”',
       'reviews.featured.two.copy':
-        '“On a bâti l’itinéraire ensemble en appel vidéo et on voyait les disponibilités en direct. Leur concierge a réservé un guide privé pour mon père afin qu’il explore à son rythme.” - <strong>Riya</strong>',
-      'reviews.featured.three.title': '“Nos amis en parlent encore.”',
+        '“Notre guide francophone a raconté l’histoire des ruines mayas avec un enthousiasme contagieux. L’excursion était bien rythmée et très enrichissante.” - <strong>Clara</strong>',
+      'reviews.featured.three.title': '“Snorkeling limpide et facile.”',
       'reviews.featured.three.copy':
-        '“Le chat de groupe débordait d’idées. Le planificateur de Québec Mexique a tout gardé organisé et a même ajouté des cours de mixologie inspirés de notre liste Spotify.” - <strong>Diego &amp; crew</strong>',
-      'reviews.featured.four.title': '“Chichén Itzá sans stress.”',
+        '“Le snorkeling était magnifique, avec une eau claire et des poissons partout. Le guide francophone a tout expliqué avant de partir.” - <strong>Laurent &amp; Anne</strong>',
+      'reviews.featured.four.title': '“La promo mercredi vaut le détour.”',
       'reviews.featured.four.copy':
-        '“Ils ont planifié l’entrée au lever du soleil pour avoir El Castillo presque à nous, avec un guide passionné d’histoire. Les tacos du déjeuner étaient un moment fort.” - <strong>Mariela &amp; Tomás</strong>',
-      'reviews.featured.five.title': '“Pêche en famille, facile.”',
+        '“On a profité de la promo mercredi pour une sortie en mer, et ça a dépassé nos attentes. Le guide francophone était chaleureux et très organisé.” - <strong>Camille &amp; Hugo</strong>',
+      'reviews.featured.five.title': '“Tour de dauphins libres magique.”',
       'reviews.featured.five.copy':
-        '“Québec Mexique a rempli la glacière, géré les permis et nous a jumelés à un capitaine patient pour que nos enfants attrapent leur premier mahi. Zéro stress, juste des sourires.” - <strong>The Greene crew</strong>',
-      'reviews.featured.six.title': '“Parfaite tournée de tacos de rue.”',
+        '“Voir les dauphins libres de si près était émouvant. Le guide francophone nous a appris à les observer sans les déranger.” - <strong>Naomie &amp; Vincent</strong>',
+      'reviews.featured.six.title': '“Cenote et snorkeling combinés.”',
       'reviews.featured.six.copy':
-        '“On a mangé au centre-ville : al pastor, cochinita, birria, sans jamais faire la file. Notre hôte connaissait les vendeurs par leur prénom et a trouvé des options végés pour mon amie.” - <strong>Avery</strong>',
-      'reviews.featured.seven.title': '“Cenote sans foule.”',
+        '“On a adoré l’excursion cenote + snorkeling. Le guide francophone était patient et prenait le temps de répondre à toutes nos questions.” - <strong>Éric</strong>',
+      'reviews.featured.seven.title': '“Ruines mayas au lever du soleil.”',
       'reviews.featured.seven.copy':
-        '“Ils ont trouvé un cenote caché et ont calé notre arrivée entre les autobus. On flottait dans une eau cristalline avec seulement les oiseaux en fond. Serviettes, collations et photos étaient gérées.” - <strong>Jess &amp; Priya</strong>',
-      'reviews.featured.eight.title': '“Snorkel digne d’un documentaire.”',
+        '“Arriver tôt a tout changé, et notre guide francophone connaissait chaque détail. Le tour était bien structuré et sans stress.” - <strong>Sophie &amp; Julien</strong>',
+      'reviews.featured.eight.title': '“Tortues et poissons partout.”',
       'reviews.featured.eight.copy':
-        '“Notre guide a pointé tortues, raies et même un petit hippocampe timide. L’équipement était parfait et le bateau avait de l’ombre, ce que mon père a apprécié. Ils se sont occupés de tout.” - <strong>Samir</strong>',
-      'reviews.featured.nine.title': '“Soirée tacos romantique sur la plage.”',
+        '“On a vu plusieurs tortues pendant le snorkeling, et l’organisation était parfaite. Le guide francophone était super rassurant.” - <strong>Isabelle &amp; Marc</strong>',
+      'reviews.featured.nine.title': '“Promo mercredi, meilleure décision.”',
       'reviews.featured.nine.copy':
-        '“Ils ont transformé une envie en soirée complète : tacos grillés, aguas frescas et lumières sous les palmiers. C’était notre date préférée du voyage.” - <strong>Lena &amp; Marco</strong>',
-      'reviews.featured.ten.title': '“Aventure accessible, bien organisée.”',
+        '“La promo mercredi nous a permis de faire une excursion de rêve. Guide francophone attentionné et logistique impeccable.” - <strong>Valérie &amp; Thomas</strong>',
+      'reviews.featured.ten.title': '“Sortie dauphins libres inoubliable.”',
       'reviews.featured.ten.copy':
-        '“J’utilise un fauteuil roulant et ils ont coordonné rampes, transport et un guide patient pour Tulum. Je n’ai jamais eu à répéter quoi que ce soit. Tout a roulé.” - <strong>Natalie</strong>',
-      'reviews.featured.eleven.title': '“Cours de pêche sous-marine très personnalisés.”',
+        '“Le tour des dauphins libres était respectueux et magnifique. Le guide francophone était clair sur les consignes et très rassurant.” - <strong>Mélanie</strong>',
+      'reviews.featured.eleven.title': '“Snorkeling et sable blanc.”',
       'reviews.featured.eleven.copy':
-        '“On voulait apprendre en sécurité et ils nous ont jumelés à un expert local axé sur la technique et le respect du récif. On est repartis avec de nouvelles compétences et un dîner préparé avec notre prise.” - <strong>Darius &amp; Cole</strong>',
-      'reviews.featured.twelve.title': '“Les enfants ont adoré la sortie nocturne sur la lagune.”',
+        '“Une journée parfaite avec snorkeling, plage et un guide francophone qui s’occupait de tout. On s’est sentis choyés.” - <strong>Nicolas &amp; Sarah</strong>',
+      'reviews.featured.twelve.title': '“Promo mercredi et snorkeling.”',
       'reviews.featured.twelve.copy':
-        '“Bioluminescence, histoires et chocolat chaud sur le pont : chaque détail était bien pensé. Même notre ado a laissé son cell pour regarder les étoiles.” - <strong>Ruth &amp; family</strong>',
-      'reviews.featured.thirteen.title': '“Journée gourmande du marché au mezcal.”',
+        '“On a profité de la promo mercredi pour un tour de snorkeling, et tout était super bien organisé. Le guide francophone était dynamique.” - <strong>Élodie &amp; Patrick</strong>',
+      'reviews.featured.thirteen.title': '“Tortues, ruines et mer turquoise.”',
       'reviews.featured.thirteen.copy':
-        '“On a commencé au marché local pour les épices, pris un cours de cuisine et terminé par une dégustation de mezcal avec un maître. C’était authentique, jamais touristique.” - <strong>Eduardo</strong>',
+        '“On a combiné tortues et ruines mayas dans la même semaine. Les tours étaient efficaces et le guide francophone était passionné.” - <strong>Joanie &amp; David</strong>',
       'reviews.share.heading': 'Partagez votre expérience',
       'reviews.share.copy':
         'Écrivez-nous à <a href="mailto:info@quebecmexique.com">info@quebecmexique.com</a> avec vos meilleurs moments ou identifiez-nous avec <strong>#QuebecMexique</strong> pour avoir la chance d’apparaître.'
