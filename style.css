@@ -167,6 +167,15 @@ main {
     padding-bottom: 3rem;
   }
 
+  .promo-banner h2 {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .promo-banner p {
+    overflow-wrap: anywhere;
+  }
+
   .promo-banner__price {
     position: static;
     transform: none;
@@ -327,6 +336,7 @@ main {
   border: 0;
   padding: 0.25rem;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .nav__toggle span {
@@ -2269,6 +2279,11 @@ main {
     padding-bottom: 2.5rem;
   }
 
+  .hero-slider__content {
+    margin-inline: auto;
+    text-align: center;
+  }
+
   .hero-slider__controls {
     inset-inline: auto;
     right: clamp(1rem, 4vw, 2rem);
@@ -2277,6 +2292,11 @@ main {
 
   .hero-slider__dots {
     bottom: 1.25rem;
+  }
+
+  #tours-assurance-heading,
+  #tour-rows-heading {
+    white-space: normal;
   }
 }
 
